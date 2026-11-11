@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+/build/
+/gpu-contact/cache/
+/gpu-contact/data/
+/outputs/
+*.pyd
+*.dll
+*.so
+*.cubin
+*.ptx
+*.f64
+*.mp4

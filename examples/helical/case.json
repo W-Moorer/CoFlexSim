@@ -1,0 +1,15 @@
+{
+  "case": "helical",
+  "scene_sha256": "13fc45c70fc93d2f051309b01a263e09caf8a39ad038742251bf2c4ebbe4da69",
+  "nodes": 9796,
+  "tetrahedra": 24642,
+  "dt_s": 0.000125,
+  "duration_s": 0.5,
+  "short_steps": 96,
+  "backend": "native_cuda",
+  "batch_capacity": 8,
+  "region_budget_MiB": 512,
+  "pair_capacity_factor": 3.0,
+  "contact_contract": "surface_cms_cartesian_projected_hht",
+  "friction": false
+}

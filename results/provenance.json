@@ -1,0 +1,71 @@
+{
+  "records": [
+    {
+      "file": "spur_host_cuda.csv",
+      "source_record": "native_strict_long_v2_fastcapture_r1.json",
+      "source_sha256": "84f6f0a39d6430316bccd3aafd55ee301062e4270766cbf426db09b7277c7729",
+      "sample_count": 4000,
+      "start_s": 0.000125,
+      "end_s": 0.4999999999999588,
+      "response": "theta1 + (20/30) theta0 (rad)",
+      "time_alignment": "none",
+      "backend": "host_cuda"
+    },
+    {
+      "file": "spur_native_cuda.csv",
+      "source_record": "native_strict_long_v3_native_strict_r1.json",
+      "source_sha256": "1314c2e89848bb65ef523bfe4ea37b4c819a8b87482db9406375efe584e9fbd5",
+      "sample_count": 4000,
+      "start_s": 0.000125,
+      "end_s": 0.4999999999999588,
+      "response": "theta1 + (20/30) theta0 (rad)",
+      "time_alignment": "none",
+      "backend": "native_cuda"
+    },
+    {
+      "file": "helical_host_cuda.csv",
+      "source_record": "helical_host_cuda_4000_r0_v2.json",
+      "source_sha256": "4b43cd1aeb701c0bacb2ca42805438fd93c36a8019d208fc9dab9c8daaa4e804",
+      "sample_count": 4000,
+      "start_s": 0.000125,
+      "end_s": 0.4999999999999588,
+      "response": "theta1 + (20/30) theta0 (rad)",
+      "time_alignment": "none",
+      "backend": "host_cuda"
+    },
+    {
+      "file": "helical_native_cuda.csv",
+      "source_record": "helical_native_cuda_4000_r0_v2.json",
+      "source_sha256": "0d53946e9caec76c3f486e820f506103b8b0fc882ee46d17ee3bb0bc8e5e911f",
+      "sample_count": 4000,
+      "start_s": 0.000125,
+      "end_s": 0.4999999999999588,
+      "response": "theta1 + (20/30) theta0 (rad)",
+      "time_alignment": "none",
+      "backend": "native_cuda"
+    },
+    {
+      "file": "cam_host_cuda.csv",
+      "source_record": "guided_cam_host_cuda_20000_r0_v2.json",
+      "source_sha256": "464851a94dc6a1aae23042d9870ff2a1596ed3032ed92d9d2d75738ce4e3e2af",
+      "sample_count": 20000,
+      "start_s": 0.0005,
+      "end_s": 10.00000000000073,
+      "response": "follower coordinate (m)",
+      "time_alignment": "none",
+      "backend": "host_cuda"
+    },
+    {
+      "file": "cam_native_cuda.csv",
+      "source_record": "guided_cam_native_cuda_20000_r0_v2.json",
+      "source_sha256": "11447ff5c068d34542be003392bed1bbb82b14a809ec4d5e7585419d13e32401",
+      "sample_count": 20000,
+      "start_s": 0.0005,
+      "end_s": 10.00000000000073,
+      "response": "follower coordinate (m)",
+      "time_alignment": "none",
+      "backend": "native_cuda"
+    }
+  ],
+  "comparison_scope": "same-model implementation parity, not a new independent FEM validation"
+}

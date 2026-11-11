@@ -1,0 +1,15 @@
+{
+  "tag": "v0.1.0",
+  "assets": [
+    {
+      "asset": "coflexsim-example-data-v0.1.0.zip",
+      "sha256": "baf7bc59d5f3ea871054aeb57af1ed76c4db97f1313729a03d43c3b098629c7d",
+      "bytes": 5708518
+    },
+    {
+      "asset": "coflexsim-spur-runtime-v0.1.0.zip",
+      "bytes": 437344416,
+      "sha256": "487a3b803a82cde7b0182d559c0ecbeead513833349d5380bf47e7f25dfcdf3f"
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "snapshot_date": "2026-11-12",
+  "files": [
+    {
+      "file": "gpu-contact/src/media_modal_recovery.py",
+      "research_sha256": "cc8b77f943e8c2e2ab6e5964f27f3a0e427575855ac90a234cd2ea62984a7811",
+      "release_sha256": "7d2825b8d4b6bf497115e3af0e3f8ffc972f921f9daa1a1ffa468a457eb45046",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/tight_residual_certificate.py",
+      "research_sha256": "3b4a2eedb35cbe333c5f73a5e35f7ca554cd14bfb7aee369b3d15d721c05c6f8",
+      "release_sha256": "a1fbbf7a3d4e6c748dfa83ef1a81127077b7be6a3004d95c5dc5d4b32cf21cc9",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/selected_residual_region.py",
+      "research_sha256": "c49a77cd08a0b7f487fc27d70669df83606b884ecb4443bb5c30765ad300d0d4",
+      "release_sha256": "a0c1384934904467706d6852ef57b3d92ac62e6d4deab111eab5fc7185973456",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/fast_modal_precompute.py",
+      "research_sha256": "09e26f1be3e0a9fd2f4a1e2f848337e602f56570cd14befd48a06bd00835fb0f",
+      "release_sha256": "06ff0bdc445be35e37c3b831573f6976732f75d2963cad1c4ee02a3606faecc0",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/surface_cms.py",
+      "research_sha256": "fb2b5ecd5ec3018b383eb25b6b841a5c5e848e7e9158261036c20287a9f7ef4a",
+      "release_sha256": "808115983f752dc47404130052d3b3c94f84646fc1d8e878017e973515e227cd",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/shared_contact.py",
+      "research_sha256": "7c5dd46efefcce995ecf95d115f26f794cd4fcd4a8ebe788840a505c6bb02130",
+      "release_sha256": "7c5dd46efefcce995ecf95d115f26f794cd4fcd4a8ebe788840a505c6bb02130",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/quasistatic_pd.py",
+      "research_sha256": "9ecf47580323cb9f05872fbee9b2f6946a308a5abfbbc6b4941c201201835835",
+      "release_sha256": "9ecf47580323cb9f05872fbee9b2f6946a308a5abfbbc6b4941c201201835835",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/residual_compression.py",
+      "research_sha256": "ec65b141cc4b9983db496e9dc6703366fc441ff0588308f5b73e8962a102d5ea",
+      "release_sha256": "c15b9dcec92bde3988bb2c1e9de5ee11928dad111cfe25f98847555d9b725d8f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/quasistatic_basis.py",
+      "research_sha256": "d11ddc21033cb2e12c6bbc5b34cbae2af58a8e3af322cbfbaf9c315ce5c96543",
+      "release_sha256": "25da1adae149da6494f40196250ec5f2b340628b5251cdbdb525ed18495b8c11",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/compact_recovery.py",
+      "research_sha256": "83b8874bd6aa3eac57e1ca8b20d10263d82af7363c416e6259bff815d03025df",
+      "release_sha256": "f5677e62f25f1a1c5cd2be9ae57cb7eb98f030b8a94db062fbd35fa77c9da8e4",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/regional_flexibility.py",
+      "research_sha256": "646ac0098596c8dff6c88c4d567231b45cca6d97a3eaa1649c974c27fa381579",
+      "release_sha256": "2eb0bb88eec50e225a55b7079327a744bde08fe30574a1619136afe48780fa0a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/coflex_core.py",
+      "research_sha256": "78dc3c7c976689021e9d9b1b434778650194e132d8e0fb1410d9b38c04d6c7d8",
+      "release_sha256": "69ba27ab4c3cb28445159a091f602471d1b2d508caf3b4704fe64aa140a39a1e",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/consistent_mortar_contact.py",
+      "research_sha256": "5728ddb0c8b642b397bca902c86faeb850dadf8717483100b2cb00169da0dee1",
+      "release_sha256": "5728ddb0c8b642b397bca902c86faeb850dadf8717483100b2cb00169da0dee1",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/embedded_contact_skin.py",
+      "research_sha256": "de573f4aaa70899e3f8b62f7c6f5974a3629e1d84d7ae14663a4e11505b61d1e",
+      "release_sha256": "f4abc8feafe1ec0606f612c9a5f35afb11a76991ad1eb38ac16c352e85eb3acc",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/blended_face_contact.py",
+      "research_sha256": "b6cb67f52f7e833de98786c71591eca29317d1dd3ce9477ef452aa79b16eb4bb",
+      "release_sha256": "b6cb67f52f7e833de98786c71591eca29317d1dd3ce9477ef452aa79b16eb4bb",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/bounded_patch_contact.py",
+      "research_sha256": "4ffe354014a55a119d3fd53d185d0c620252c332244cca575bf51aecc0489864",
+      "release_sha256": "8175736cf2c7547998099b0ecd7791999e190139491911b6352ad9b3c66bfe2d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/contact_candidate_cache.py",
+      "research_sha256": "114bf6397f670db63a1af6a78a6c42232148bf9ce41951914991e1539ed18b6d",
+      "release_sha256": "267e79b887ddcbbd62a3f50d5eac7995637564af62e1ee62bc1233831eec0b86",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/reduced_material.py",
+      "research_sha256": "7217c0b4e59f36a5de37346aafa180cc9c3cdbe167c6f69d0d669acb1a4a97a8",
+      "release_sha256": "7217c0b4e59f36a5de37346aafa180cc9c3cdbe167c6f69d0d669acb1a4a97a8",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/contact_multiplier_history.py",
+      "research_sha256": "8e34f2d9a5516eece3476602f0fc628965ff428a8e5d70748454ba5113eee363",
+      "release_sha256": "8e34f2d9a5516eece3476602f0fc628965ff428a8e5d70748454ba5113eee363",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/adaptive_correction.py",
+      "research_sha256": "06d8fd4fc3e00ebf38dfbc4843c6ebb68897c97f3d3954e2284d23c33d817cbd",
+      "release_sha256": "473f398266c9b091a8eaaae4b46b900fb00fe5596e1e0617ef82fc26e7af720f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/pd_time_integration.py",
+      "research_sha256": "67b9a2005e27043e102b34a2d4db81f50f5b05a249a6f54931953586ce8b3ec8",
+      "release_sha256": "14fe9e2df73333cfc9b6bb92306b5cbef59273ace69e99fcf1f8d978584184b6",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/limited_memory_inverse.py",
+      "research_sha256": "ce0e57acb02d61e8e7ff0097c756a9ef7859f6835711f0213c1c444c2ee22cdc",
+      "release_sha256": "f88c64f43d8d1ee150baace3b2b9764223a956132a4479069efef492c06cb6ee",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/hard_contact_solver.py",
+      "research_sha256": "407b7be555e34803dd47fcdafc2e9ec1ba3992a8d7ef2fd671752587e2aa9345",
+      "release_sha256": "d41d3faaf9e64756c03c81e18f353010e90b4bed4091877cbc8dc53df0a319ff",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/modal_compliance.py",
+      "research_sha256": "e7a79c07b76b7de03b64ef6aa13b598639677fb963c72e293f5a72a239d425b8",
+      "release_sha256": "22c84559edbff9818492598519ee81becd27cbe2b8834c64844778b56db31930",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/segment_vertex_contact.py",
+      "research_sha256": "b2434333ca60325c022477f2ec4b3b95d682d47348d97c167d621b205f76a6c3",
+      "release_sha256": "b2434333ca60325c022477f2ec4b3b95d682d47348d97c167d621b205f76a6c3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/segment_contact_kernel.py",
+      "research_sha256": "4483a35a71e673e0f2c58fbee007c86a5b4783ee6d387cc4849574930f2116bc",
+      "release_sha256": "c78ae553290fcda73c126b1817e3d85031b6baad861d5e0543a640443763940d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/mortar_contact_geometry.py",
+      "research_sha256": "c38581a1fb5dc5c36615884d6f4d63204a0345b52b98d3eb7c330f26411c21b2",
+      "release_sha256": "26eab9dc2aab5760fbad9f757120d9f80f77f3915b6d63669abd817de76ff94b",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/projected_cartesian_inertia.py",
+      "research_sha256": "6cc46323303cc3fa2472c902ea784c2cb30af0b6264c4019f3126b13977559c8",
+      "release_sha256": "d85e15c44c5307a610fe068e140c8eebe6f6b4425ba34db62e9e24acd2caa2b7",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_modal.py",
+      "research_sha256": "b2766e6805a0103b086e7961fdd094d4cde0d765b8e041d9f9af496f5a730edd",
+      "release_sha256": "f5348effe505e1815a50a180e777607c544ada2fbcde2725311cd5c7f15a9fdf",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/clock_modal.py",
+      "research_sha256": "39667eee646da527ba720c00afb09e7855e75a47f46df3809050b0d79bccba9e",
+      "release_sha256": "c7c53840900c8410862ccf745b58d630e1d6ade87be7e22c23da43c901bc2926",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/modal_step.py",
+      "research_sha256": "33b31ac925ad5d6e23f0a8cdf911d1646c6c486339aa7733b390cc187f5198d0",
+      "release_sha256": "b7ae25db4113c3505d01ed10c9c3ddb5c709c1bbed8fdc1826fc109ad81d52f9",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/residual_cms.py",
+      "research_sha256": "a7e75aa3fea8ff8b5156a4d461245c837aab539f4749c8d28863c0cc952d97f6",
+      "release_sha256": "7dd1aaf6bf9f566c4e66ae61d8b4971fb3b5b92355c822dc8a42da37058d6138",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/finite_contact_compliance.py",
+      "research_sha256": "988de861b663d19cad69d9792750c65615fef9a8a1c0e288959ff3b747038c89",
+      "release_sha256": "1dc5c78db322fb3eac9621cd4532d178c60b75ae27b9c9999e28fca22fd826a0",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/endpoint_cms.py",
+      "research_sha256": "67c901549dc91196399a6e80a0db59c46833d94dcad8713847301ccd4b7c5e84",
+      "release_sha256": "e5d6f6f739af2795f7e9979baa843e096f404a454636a6d15657a2628f500e8d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/host_surface_library.py",
+      "research_sha256": "31e3cd1e64e99ec4595ee8be651637e064973472138fc7a4400e4238789ff0eb",
+      "release_sha256": "f0b349e2de1f5a450d1456964ba51839174c9369c095f0783d6615310e8d6696",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/surface_response_source.py",
+      "research_sha256": "ced61ac16ce9f20103058b84459a96c8785bf05a69611a4d5a5973962d27f990",
+      "release_sha256": "27c96a3a0bbfdc8f6b16f44b9d30daffa142316be31a646a2e49a91b1f7daa63",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/native_runtime_adapter.py",
+      "research_sha256": "5acf6c2628e4a5d026f0ff52d501f190b4f04e83bcab1e6458bcd430d9601339",
+      "release_sha256": "5d475f1cde88b4ec23b1047d145457cdbe577bd0f477ffa74e8001deb1ace55f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_region_candidates.py",
+      "research_sha256": "33b6a6a152c45d638da492878e6814465f02dfd2b00e19836cb91239e417be5c",
+      "release_sha256": "a2e48d752af6e42375cb465747f71dcc215b3852fa3482b6f9b461c654ac617f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/regional_pair_filter.py",
+      "research_sha256": "ab2c5e00b813ee1c399f0b0b03848e7b7bcb42c2d750b779672b639e959ee731",
+      "release_sha256": "cffd390b78dc32175fb5073515f4b5fc6e5c276e9a901ded80c40fc891344c1d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/native_region_adapter.py",
+      "research_sha256": "0672322f441fd2f054e2df66d7bfba73a016ff5a40b5372225409668e95301ad",
+      "release_sha256": "9baa4575942496a0562b20cffd34187ba4682975a9b8aaaa2123a53cf33e7429",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/common_contact_backend.py",
+      "research_sha256": "96862d530a74bc519fe1ebed6bb4cd2005ecedc66193d03431533d76193cfa7a",
+      "release_sha256": "1587bb4a25d51979d1f5fc51f501f1bcac2cb12f55acfd20190a76c847e81d2a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/separated_region_backend.py",
+      "research_sha256": "e87139ae3d592f7653d5a347ee547bdc75a971358910e24ca589ce529582fe0c",
+      "release_sha256": "32665aee8fda6d0377057b0b55769bdbcdbfaf73fe81f0abd0bfe218ef458c77",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_contact_start.py",
+      "research_sha256": "049c34b7e8bf61e062a352f16dfa9559e0f203754a054b3ba9e7337424c467b8",
+      "release_sha256": "7b07fcddabe064a75f219463bf6fa3e616c50c18769d6bf660566411df2b711d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/bounded_contact_entries.py",
+      "research_sha256": "d7a3bd9b9a89e91c160a8d29b3eafd8463af62757d72f0351b1d84c5600488b4",
+      "release_sha256": "dcb5cb1c4ca119d5a45baf6ba7d66539c9b1c4036ec81aa150b60e454b87e381",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_contact_rows.py",
+      "research_sha256": "624b5c7dfdc89da517a98350ebfef833f18a070667983233d75da7e6bbbaa89a",
+      "release_sha256": "bfb552d32e26fa521e6940d06ff9da10eb4c318f72fb20bc957a5598e049c64e",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_region_assembly.py",
+      "research_sha256": "347cb5aaf65edcdef2f149c4f400a967c4b1a270feb7c1f09c0ab8035bf65ce8",
+      "release_sha256": "59233d0ae7b97521271cba0537485bbe4478781865992377a2a460782167b9b8",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/sealed_region_backend.py",
+      "research_sha256": "43e078c8b0d1636379bc44cc81af4455e0a33698ee68fbad6cb5c6727ba691e8",
+      "release_sha256": "13ce600a473fa88b7efef4bea30565ce8266d17a7461f3a4c4e8f3cbf9be452f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/response_cache_policy.py",
+      "research_sha256": "5425397ecae362e55929649acb455914538a33a79907b165c3f0b57bfdd12909",
+      "release_sha256": "9cf19390dd1ec321c9a07d8d098cd2efd21c8186e48a31c4abd61679d3843a4a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/sealed_surface_gpu.py",
+      "research_sha256": "40876cb77ac3991837ddd149c172ec45e670e479059ef8b30a8bd4ab086fa69b",
+      "release_sha256": "78a2d6869a43533f64540e026d3c92dbd3a8d512bad324904ead36c49adcb643",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/windowed_surface_backend.py",
+      "research_sha256": "be8e86e23225b67741edb0b2b924ff2205537962aa79c5f53ed5249957f70e72",
+      "release_sha256": "6fb1597d2bd7d024e6b64d260932cb79ac2fade763f0c078ea659790d235a3eb",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/region_working.py",
+      "research_sha256": "e3cb637c675f60740f921528de23dd890d678735d2287ff6e73dab361fb32aaf",
+      "release_sha256": "77805a3df803e1f651372c93ac16ad52fefedef0209feeccc5907cf49df3193b",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/conditional_graph.py",
+      "research_sha256": "141cc780314428e6a9c4b0a267550ec03d76a36daff8269e52f34590ad2080ff",
+      "release_sha256": "9b68b4b1a21e67909a647f3612889a850526b533b2271293f6cf9998e7f235d7",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/validate_mechanisms.py",
+      "research_sha256": "909a66a23c950af2334282e54beeac5e2333dcb06867402371ce81f492249547",
+      "release_sha256": "96b562839a5552b5e076af927f92d5f13faf2e24fa7ad7c28172e60971bc8d99",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/resident_working.py",
+      "research_sha256": "e558f5588e1f0fe3510537f874f39c5b6b832f4349662011b49da4fc5686695d",
+      "release_sha256": "bc6da2de1042456274ead2a208d3faaa9be56b0d76eae209aa66737e6c51bf21",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_working.py",
+      "research_sha256": "0711507b172e00ec757867dd6d95402f072ff75e0f0ffa6788f0992caad29eaa",
+      "release_sha256": "f88d55f2145c222e4edfea9ea35b5dc96f802d946f9412cf5b3c488435700678",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_qp.py",
+      "research_sha256": "dbf9751605914b818827b60c25a6b6d21a9dd19d3869bf91a99a7afa43f1a529",
+      "release_sha256": "9b002d4aa7bcf9173e6f382b08509220148ddcb569ad267302f76d415ed49d29",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/working_graph.py",
+      "research_sha256": "288b2f846d922fed695d77ae88dd1d77531dae4476ff2b0b3f7d56178a22be85",
+      "release_sha256": "bb62fbcf5eb7fda3bc82f9e5dd8384da066a0c55dae8fd32f6ea187e23a761b2",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_cached_normal.py",
+      "research_sha256": "474d34b1194abdccbf0b42deeeab8f8bca4b39e6cf8dd0e23dc3993cec180042",
+      "release_sha256": "74ba968948a805596645b6178edfca73378d42e0ec3dd850d2fb21796e06acd8",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/cached_normal_contact.py",
+      "research_sha256": "1af4be12b780ad05ef828a81c68b207cf74e02c54b75c444b24e3ad125c968d9",
+      "release_sha256": "f99a9f29f8a408725421fe4b2626ddffc00613683b3569eefd99ed4cabbbab57",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_geometry.py",
+      "research_sha256": "2ade806bb5f4ef9322ac39f5ba0ac78d37ccc744089a4bd6dfc41dd7a9aa24ca",
+      "release_sha256": "56dfe6f06c2b8942ad70032582c2e7e2f8905dcc35a44b4ffc14deb2504204f4",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/geometry_graph.py",
+      "research_sha256": "60b72a68f59435372a6fc027375560fde9b773210b8620115ccb78ba5ebb4b63",
+      "release_sha256": "189735f3e26506a05076f18db229932f551474872dfcd892f0974695c96580a9",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/fast_assembly.py",
+      "research_sha256": "8096083d2244b98ee2a46f8896247e9e64da9965290348a721ab4588defb8eec",
+      "release_sha256": "59500aecde402b6af303eda0d9fa0c9bcd92e7bfd7651f7055b1c31b88fa927a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_overlap.py",
+      "research_sha256": "970d445bb7fd23b00e160e846de8beb6f7d41b08db0253e62b395374cf05a17c",
+      "release_sha256": "6a78c9502f14c0abb6a452d76ddce0d6628067e759be1b3938204d90a145006c",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_bvh.py",
+      "research_sha256": "575b856e8be283da1302c897acdfa8dddff4c834deab5c635e2fb10caf300e9d",
+      "release_sha256": "5557d5e4c2709de2ccbbcb62d458bf56310eb75400e525eec2df63192dc08580",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/fused_normal_contact.py",
+      "research_sha256": "e0901f5d484ac9c3a06502825ed5f696162b76c1493907461c462e5e4da3a3ca",
+      "release_sha256": "82e933b1e580c86a002ec1678cf75b25846c01b6ecc02cae9c21a5ab86b807bc",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/fused_region_contact.py",
+      "research_sha256": "6ab0f3eed77647a43eb2931f040a78aaa808bc2c938323fc0ed3cfc7098142d4",
+      "release_sha256": "0f0563924fbbd0ba74b0055ea0c99848dfd9c8136ed4d5b9d301f11860bb1ed3",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/live_contact_execution.py",
+      "research_sha256": "77e7c6f323684c20b98bc5dbd25726fd0ba6534670c7fc5d2cdac2b01a896cfd",
+      "release_sha256": "a8310de947e026748f30f8d17e8c1f7877f6729852e9104e86d60e9f3fc99e8a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/compact_contact_rows.py",
+      "research_sha256": "d78bd686338330124796944555329ad83502edec38c8f866f9445295eee0d4f3",
+      "release_sha256": "5b4bfe52b548daf66e9a105220386925d9f370b41f3df414d94784d4f3b81873",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/direct_region_contact.py",
+      "research_sha256": "337c8f7d65159595e88a93885d8c0e27321c22abb2535f37be6ba91dfdc16e9f",
+      "release_sha256": "1cdd7b322366b183ad14d869b4d7c4610a940827cb78f4b39f42dcf8e4aecb0a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/csr_actions.py",
+      "research_sha256": "2e0dad3c54d644d0c3a25a5e528360793b829486acc1fe64d54b3a327da4328f",
+      "release_sha256": "83a4ae3afd977dcaa5502b8607998b7a1ef4df6f0e40f4eb189aa309ebd6a83f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/resident_contact.py",
+      "research_sha256": "8a08f1b2b3e573f277087e2548b47099d7edec814ffe399a095daa580596dafa",
+      "release_sha256": "0f74949cc55d2ab28caa9ca4165661dd7ff2f0d91e0ade01b1da2ea75af534cd",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/aliased_working.py",
+      "research_sha256": "51827d60d99fd73a20027d2ba41a9267fd76f2272e2fe4f5ee9b233d442956c3",
+      "release_sha256": "ec3e4999a914c7b5f8937bf0cbd230f9b2a77d4b9281c257e25914ede3a0521a",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/batched_time_simulator.py",
+      "research_sha256": "b001e22e46695a8f05f7b8103077ebbcfd379adef64b872c3a2b644580155ad9",
+      "release_sha256": "3049238f3eb0b9ca50285aa657c2fdea951b2c655dc855f1af6e74eefcebf470",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_simulator.py",
+      "research_sha256": "a09e85ef77e8b47780d895013bdb734e475e5609983b720b10b87a9dfc58bae9",
+      "release_sha256": "28eb521fb63f965c7c89bd577e18531a4d8ed3b0ca034e654685c6366feec3a6",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/operators.py",
+      "research_sha256": "2da17a307851e99f81aae404ce3fb77180aabc452356f60765cb1f85c082f421",
+      "release_sha256": "2da17a307851e99f81aae404ce3fb77180aabc452356f60765cb1f85c082f421",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/trajectory_graph.py",
+      "research_sha256": "5b7a3b8dcf11d74a04a1d887fde35d5f373d0e70bc0977edddb1c6f3fce16591",
+      "release_sha256": "fcab5e927260b51315d47fe556d3f15fd3c0f5a323d0f473f67326046ef9689d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/parallel_loop_simulator.py",
+      "research_sha256": "4438b246247a03aaaf5947218f5872ff50bd386220cda36c3bb5b51fe33a7829",
+      "release_sha256": "bda427386316e2a640caf05aa76c38c9980a065bdf3b43d569b68de4b7becc58",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_loop_simulator.py",
+      "research_sha256": "6ed380e15ecb800c3836bce29f4793c15672dcccdc433a6828f8c36923bdb21c",
+      "release_sha256": "49ab5c3607e3b2f748307a6cc34465e4aaab6e1770ac7581e46f9ca7b0ece12d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/resident_simulator.py",
+      "research_sha256": "b8c0b86af70f55021c2921efbdcfc758f1b01fa70c0478aeefdc4356d3072d88",
+      "release_sha256": "45d25be1f7b5c9d384d801d4b78275e932dc67f657c36d49aeae7c06a68dd996",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/device_residual_cms.py",
+      "research_sha256": "043e7d0e31ce753c8d41cb57566140a30983855f7559f0de619ddcbcc08e640f",
+      "release_sha256": "b00b68994efbe2c0d4a6040f9ce8eb68fd7e29fbd2f93189e9bfa02ca04498d2",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/normal_mortar_contact.py",
+      "research_sha256": "8e3e2dfd611a54cb48aad352271ca9c44af6cd3f4e815f2455c38ef0f37be5a3",
+      "release_sha256": "0eb5f9a7f6a6d658684b78aa5f991c9312e656ece34034720dfcbf451945f2f3",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/median_patch_contact.py",
+      "research_sha256": "81e163870c3f5c174dafc8cbe63187d2139a22aad054e2efae23c200afac7365",
+      "release_sha256": "d318b18694e5ed1d21cf4b7acd93c1deba7538f6f02531e635c3de34a48c6727",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/area_average_contact.py",
+      "research_sha256": "7511299349aed9ba6c09e0fcf2a7534d845a642aa32a18b8d92c956f8c15ff7c",
+      "release_sha256": "e4b0cbe6105f21d3fc8c13c52bfc5cd2c8ebbfd301441785cde449763b2cf983",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/selected_contact_backend.py",
+      "research_sha256": "d349a8ac0bae4b12d5e9de44b103e007320a017de6892e2f4859966b841a2120",
+      "release_sha256": "0c192a311b019e6d6bb4013254793cc41ec052bc34352f8e7dde13da8878a66b",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/clipping_topology_cache.py",
+      "research_sha256": "f297e42e489cac5fc577dd1ffa8caed5fa66a75e346978e896dc80d1fe5594c6",
+      "release_sha256": "dee1db8d17057386d3f6bb29f426d7025f0a768b75d3018db29fca2d4b76a9d7",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/polygon_moment_integrals.py",
+      "research_sha256": "19e6737f6f471cc3dadaa46801a63f05ef4515a556a278618c6c71f73bc834df",
+      "release_sha256": "2f24d105440927029701b1a0d7ed5e686c9a3d7386b568ccee1aafa2af2e5e3f",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/anchored_pressure_kernels.py",
+      "research_sha256": "e3d948f5418317a298a2f1eaa7a00e826cd12de4537736e93a0770f01dc59497",
+      "release_sha256": "e399d8060850fdb333a5afbd81e5a9077a4405dc242aca26def91e789c6b57db",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/pressure_support_diagnostics.py",
+      "research_sha256": "aff6c24c01c1dd6bad0f2206c62e229b368ba37a4ccee60b8d8ddafccb6e7883",
+      "release_sha256": "1b9a094bcb8ed810eaa82e4f7481a864b169a7ab115530c4b9c055a29c68f1d9",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/sector_pressure_contact.py",
+      "research_sha256": "35ca4d3598407b9fad638f07d5527869959b525de354826243118fb994a1b478",
+      "release_sha256": "dbfb5d423d61f200bba6a793ff1c9603d66c47dae24761842190021519f75115",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/streamed_region_backend.py",
+      "research_sha256": "6cfd41d097f0b801101c530d0945eb004515f52c25510fe95087dea09c380a3e",
+      "release_sha256": "6d499c993aae8ccf63e0ab403a104ef32c529b5a6b902bfe1b1856759c3fecc2",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/incremental_region_update.py",
+      "research_sha256": "f2f681236e0a5162022fa04333f91d241b745bad20154d1add122ff3ac011a5c",
+      "release_sha256": "10d0721208e37998994ee2675375c8a2ec83d8af5205bd3045322739477f8b51",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/bounded_refill.py",
+      "research_sha256": "ca107473529f96b22e80e2f385b8eafffc48a197f13283aa5978c32526cf6cc2",
+      "release_sha256": "b27f1dcff0d2874ee4dbe5d84622010d7422c200cbd31b784198c9b55f348791",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/packed_surface_query.py",
+      "research_sha256": "ed49df67865d775c0e5ed3929d6b781ec30440a9ba17a8b0796d8b399d4493c2",
+      "release_sha256": "c683efc8074c8546b85d056ed1591179c08bf18072180d073d15020f0d692245",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/direct_function_backend.py",
+      "research_sha256": "7dc0aba7fc90fcb60381935c38c0ed23fa58e3d6e5c4efbe83cf7763b3eebd2e",
+      "release_sha256": "a9854a46f781c5a0c36ef20d75c4cfe361c8a5c1258a9c8e5098388b5d7de4d2",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/direct_response_gpu.py",
+      "research_sha256": "7059f13c72cc6668a4139dea9ff6ce5e34ee53760962f1f5ef620dacd54ec315",
+      "release_sha256": "25df29bb4db1efab77b807d972cf2b5ac851bc359f59ae25ff1c1bb2966e6034",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/nested_resident_gpu.py",
+      "research_sha256": "4e636c5d064db93b69653d359bbdb8454ba8393a0dfa7a658f5b423e0992e5df",
+      "release_sha256": "b5c83aaacd7d297adca249f92c4f104edfa542a2b1dace4760722e2fed03242d",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/compact_shared_gpu.py",
+      "research_sha256": "101d11b68f5cf40ccdf892a2c4c266460e557c95bf6fa02ef35f718dca1e4f87",
+      "release_sha256": "2fe2b3ea1c6376e915797942733399869d3f7ef821a57ea64552e58f0a289c48",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/shared_compliance_gpu.py",
+      "research_sha256": "f1db4a3dcc979ec8e4d251f8df29724d2d1752cf6dba2ecb66be5582be0f8d63",
+      "release_sha256": "edc039ad038b343e56ed675c7754826df81537d6f8c6ec65383920e4ea0b54a7",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/global_local_compliance.py",
+      "research_sha256": "c161ec220f9fce7b786d984fe512d4287ae4e286a17dba0ea3b34dab66c70c6f",
+      "release_sha256": "5b9f367b66f5ef9c0ec0be11c08b89bdb4b046eaf122067330b8f01d4dd5dc78",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/mesh_factor_backend.py",
+      "research_sha256": "85a7891860f3bff1e0eb9e7ee2f08952e1252591a7e0683ad8121ec47001cdbe",
+      "release_sha256": "903e0aa03d8578fcd7b00236c218f7e4836dfd310032e5059ce156f89dc7bee4",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/mesh_supernode_gpu.py",
+      "research_sha256": "4766a8011d5c8a705776b2ce45e5be7ab6b6221a68b4625a6c41c8d320eda310",
+      "release_sha256": "b5d5b6ddd6ac82cf2ad457fbe3f9a51c61acb7e74056b9c5dfdc739819eeedaa",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/mesh_residual_gpu.py",
+      "research_sha256": "75db09a7bc4046b48f534923e0c2c647339490b8017c5e662dfe6750b461fb5b",
+      "release_sha256": "bdc8ebd72af0085a43d2dc2ba47d2fbc12e18748c3e0e1a035ee4b444ab6789c",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/normal_anchor_contact.py",
+      "research_sha256": "4219a66d21483740a6de84a97641275b27b494dab0a72cb9c34c6f95daadfe60",
+      "release_sha256": "2fb0c8e22fe95707fe069f84637a814619dd2c517fc7b9adb752e0b0e170fbd3",
+      "adaptation": "portable paths/imports/compiler loader; standalone research command entry points removed"
+    },
+    {
+      "file": "gpu-contact/src/bvh.cu",
+      "research_sha256": "c3005928c2ecff8be356d50b3408b04f95d21e9f998027510af4e6fe49a9787a",
+      "release_sha256": "c3005928c2ecff8be356d50b3408b04f95d21e9f998027510af4e6fe49a9787a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/device_globalization.cu",
+      "research_sha256": "2247def8604c28cea6ec164e3d4d3fd1abf87ed421c142aa9e921af942e59e46",
+      "release_sha256": "2247def8604c28cea6ec164e3d4d3fd1abf87ed421c142aa9e921af942e59e46",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/device_graph.cu",
+      "research_sha256": "db2e846190bbf614334eb708ec1bd4e578c5da16013323bdcf3222e39cf680c3",
+      "release_sha256": "db2e846190bbf614334eb708ec1bd4e578c5da16013323bdcf3222e39cf680c3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/geometry_assembly.cu",
+      "research_sha256": "922d116ffba44ca7681132a0ea14a7824638f4f05758281e8fe7ad6fef5b2326",
+      "release_sha256": "922d116ffba44ca7681132a0ea14a7824638f4f05758281e8fe7ad6fef5b2326",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/geometry_graph.cu",
+      "research_sha256": "9d0cd592dd723b29f154bb77f5026eb0fa67f09d80a8f01bfdf28ca46fb2fe63",
+      "release_sha256": "9d0cd592dd723b29f154bb77f5026eb0fa67f09d80a8f01bfdf28ca46fb2fe63",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/modal_step.cu",
+      "research_sha256": "6e7086f50273652b07187c999bd9694f7e8e0036de329773dd9612640d6e88f6",
+      "release_sha256": "6e7086f50273652b07187c999bd9694f7e8e0036de329773dd9612640d6e88f6",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/normal_contact.cu",
+      "research_sha256": "2eec480ea6c5ff25c8239764ae226abc4693b9bbc972366b15b1e62eefb27858",
+      "release_sha256": "2eec480ea6c5ff25c8239764ae226abc4693b9bbc972366b15b1e62eefb27858",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/overlap.cu",
+      "research_sha256": "3bb55932a931c9d946a84cfc7bbb1954b25e483073af92105a1e01a101653480",
+      "release_sha256": "3bb55932a931c9d946a84cfc7bbb1954b25e483073af92105a1e01a101653480",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/parallel_columns.cu",
+      "research_sha256": "e1e65d567919057f1985d1a8b1ed7326c5b0d6b3740b5d883ce51306ad1b6c76",
+      "release_sha256": "e1e65d567919057f1985d1a8b1ed7326c5b0d6b3740b5d883ce51306ad1b6c76",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/parallel_modal.cu",
+      "research_sha256": "16d6e9065e86c07845d506e71d215db427dbcfc1cd42e8564051e4d6ce9aa1d9",
+      "release_sha256": "16d6e9065e86c07845d506e71d215db427dbcfc1cd42e8564051e4d6ce9aa1d9",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/parallel_qp.cu",
+      "research_sha256": "b0b424466ec20f2f3b765db49dfb4a66bd00110591155e1226eaa1c139a133ef",
+      "release_sha256": "b0b424466ec20f2f3b765db49dfb4a66bd00110591155e1226eaa1c139a133ef",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/small_qp.cu",
+      "research_sha256": "d4ffb10ce5967d35a473163f4f4bedfb476cd185c41b89c9eb77af4e25a1fd86",
+      "release_sha256": "d4ffb10ce5967d35a473163f4f4bedfb476cd185c41b89c9eb77af4e25a1fd86",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/trajectory_graph.cu",
+      "research_sha256": "e4766a9888324057f21e1782aeb0ff73628c07dec136754e48ec48b8cb73e8c3",
+      "release_sha256": "e4766a9888324057f21e1782aeb0ff73628c07dec136754e48ec48b8cb73e8c3",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/src/working_graph.cu",
+      "research_sha256": "5317406c97017299a902bb4a06f81b9e0704e389893115edf38eb94d91965030",
+      "release_sha256": "5317406c97017299a902bb4a06f81b9e0704e389893115edf38eb94d91965030",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/mechanics/native.cpp",
+      "research_sha256": "eb447fa4b00f85b5da28961837017e2708de82c7b28e304e1856db1bcee4ba44",
+      "release_sha256": "eb447fa4b00f85b5da28961837017e2708de82c7b28e304e1856db1bcee4ba44",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/mechanics/mortar_consistent_native.cpp",
+      "research_sha256": "5504c24442222b000736769fbe4c8b23bc9439b2e4b24e26849c312cd8ed89a5",
+      "release_sha256": "5504c24442222b000736769fbe4c8b23bc9439b2e4b24e26849c312cd8ed89a5",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/mechanics/contact_bvh.h",
+      "research_sha256": "0499ed06fde728c14ca496d0c8e27cacf14fad46065632e8eaf9b5e7ad6be45b",
+      "release_sha256": "0499ed06fde728c14ca496d0c8e27cacf14fad46065632e8eaf9b5e7ad6be45b",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/mechanics/shared_overlap.h",
+      "research_sha256": "a79daa90ca7cedb3c4e0fcb072d28a19443e8967f5e059d18c5c11dbfdaba89a",
+      "release_sha256": "a79daa90ca7cedb3c4e0fcb072d28a19443e8967f5e059d18c5c11dbfdaba89a",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/CMakeLists.txt",
+      "research_sha256": "b2f73297211dc3cc1004c7246a399f5c93d37cfad2b54ec5c49faa45d8f32961",
+      "release_sha256": "b2f73297211dc3cc1004c7246a399f5c93d37cfad2b54ec5c49faa45d8f32961",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/include/coflex_native.h",
+      "research_sha256": "c5550715ffac6fab04c234f90515269b263b6f7cbdc1966f8a7c96cfe1cf3106",
+      "release_sha256": "c5550715ffac6fab04c234f90515269b263b6f7cbdc1966f8a7c96cfe1cf3106",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/kernels/region.cu",
+      "research_sha256": "113531a338ca97b81539b45ae78471436b937c883e1b7de267a8a55f1c74cc06",
+      "release_sha256": "113531a338ca97b81539b45ae78471436b937c883e1b7de267a8a55f1c74cc06",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/src/compile_cuda.cpp",
+      "research_sha256": "04b7b4cc3794dabd4a7167c189ca96412a34b61e9da383ff140673b596df52bd",
+      "release_sha256": "04b7b4cc3794dabd4a7167c189ca96412a34b61e9da383ff140673b596df52bd",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/src/internal.h",
+      "research_sha256": "b1c0cc6437f105f251f71417fa238e2a6ce3455cfea5c975a6f7d75a93315fcf",
+      "release_sha256": "b1c0cc6437f105f251f71417fa238e2a6ce3455cfea5c975a6f7d75a93315fcf",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/src/region.cpp",
+      "research_sha256": "6240a5ffc0a6d70612f35c40ca7c7f94e51972dd7ecfdc2c2353c509eecb03c2",
+      "release_sha256": "6240a5ffc0a6d70612f35c40ca7c7f94e51972dd7ecfdc2c2353c509eecb03c2",
+      "adaptation": "byte-identical"
+    },
+    {
+      "file": "gpu-contact/native/src/scheduler.cpp",
+      "research_sha256": "8898648a8145b5cf3a1a8d4630578d9f8bbde8b8f37a6413fb2e51349f2624e5",
+      "release_sha256": "8898648a8145b5cf3a1a8d4630578d9f8bbde8b8f37a6413fb2e51349f2624e5",
+      "adaptation": "byte-identical"
+    }
+  ]
+}

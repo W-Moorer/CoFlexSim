@@ -1,0 +1,13 @@
+# Keep the measured source snapshot byte-exact across platforms (provenance SHA-256).
+* -text whitespace=cr-at-eol
+*.py diff
+*.cpp diff
+*.h diff
+*.cu diff
+*.md diff
+# Upstream snapshot and generated SVG/CSV preserve their original whitespace.
+gpu-contact/src/* -whitespace
+gpu-contact/mechanics/* -whitespace
+gpu-contact/native/** -whitespace
+docs/assets/* -whitespace
+results/*.csv -whitespace

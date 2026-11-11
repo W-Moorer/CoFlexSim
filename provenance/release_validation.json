@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "date": "2026-11-12",
+  "platform": "Windows 11, RTX 3070, CUDA 12.6, Python 3.12.7",
+  "build": "fresh standalone source build: mechanics extensions, native scheduler, CUDA graph bridge",
+  "checks": [
+    {
+      "case": "cam",
+      "steps": 32,
+      "reference_record": "guided_cam_native_cuda_20000_r0_v2.json",
+      "reference_sha256": "11447ff5c068d34542be003392bed1bbb82b14a809ec4d5e7585419d13e32401",
+      "errors": {
+        "force": 1.3357322038561713e-13,
+        "refs": 1.701642532360978e-16,
+        "contact_moment_about_reference_Nm": 1.3372380996745717e-13
+      }
+    },
+    {
+      "case": "helical",
+      "steps": 96,
+      "reference_record": "helical_native_cuda_4000_r0_v2.json",
+      "reference_sha256": "0d53946e9caec76c3f486e820f506103b8b0fc882ee46d17ee3bb0bc8e5e911f",
+      "errors": {
+        "force": 5.748532566749257e-13,
+        "refs": 6.773770286910251e-15,
+        "contact_moment_about_reference_Nm": 5.748606206629767e-13
+      }
+    },
+    {
+      "case": "spur",
+      "steps": 96,
+      "reference_record": "native_strict_window_v2_native_strict_r1.json",
+      "reference_sha256": "53f7f9d45f87bb373f6cf83d18cb07ecc9fe79aae1db4a8ef37347785b97ce39",
+      "errors": {
+        "force": 1.3967129356175593e-11,
+        "refs": 1.3070211059032943e-14,
+        "contact_moment_about_reference_Nm": 1.3935330716453093e-11
+      }
+    },
+    {
+      "case": "cam_cpu_smoke.json",
+      "max_force_or_reference_absolute_difference": 3.36844011017412e-10
+    },
+    {
+      "case": "cam_host_smoke.json",
+      "max_force_or_reference_absolute_difference": 1.021405182655144e-14
+    }
+  ],
+  "frozen_sources_unchanged": 234,
+  "timing_scope": "Smoke checks only; historical benchmark numbers are unchanged. Concurrent preparation was not used as a performance denominator.",
+  "visual_review": "Four Python-rendered README figures inspected; labels and quantitative scales retained",
+  "fine_spur_preparation_scope": "Published runtime loaded without pickle; existing exact bank reused for smoke check. A second 9.46 GiB bank was not rebuilt for packaging."
+}
