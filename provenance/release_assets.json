@@ -65,6 +65,30 @@
       "file": "coflexsim-spur-runtime-v0.1.0.zip",
       "bytes": 437344416,
       "sha256": "487a3b803a82cde7b0182d559c0ecbeead513833349d5380bf47e7f25dfcdf3f"
+    },
+    {
+      "file": "Yao-2022-Free-interface-CMS-moving-contact.pdf",
+      "bytes": 5992424,
+      "sha256": "102460facc478b7fbf0862cca920d0837b1f4966db17fd07526db9023ab584f5",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1002/nme.6970",
+      "copyright": "© 2022 John Wiley & Sons, Ltd."
+    },
+    {
+      "file": "Tian-2026-Parallel-memory-aware-CMS.pdf",
+      "bytes": 9506685,
+      "sha256": "25e0dc45c50acf5ff49418f906048ddbb6a5226b28ad48b98c92236df10d1d9f",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1016/j.advengsoft.2026.104278",
+      "copyright": "© 2026 Elsevier Ltd. All rights are reserved."
+    },
+    {
+      "file": "Mi-2027-Parameterized-residual-compliance.pdf",
+      "bytes": 21466326,
+      "sha256": "eac07f7e402eb685669e42a9fe4241b16b4bc8a08dfce4ff29daaab0139acfd2",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1016/j.apm.2026.117206",
+      "copyright": "© 2026 Elsevier Inc. All rights are reserved."
     }
   ]
 }

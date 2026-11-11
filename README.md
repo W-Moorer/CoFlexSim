@@ -157,6 +157,36 @@ python coflex.py run cam --memory --output outputs/cam_memory.json
 
 [下载全部动画、海报和元数据](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/CoFlexSim-media-60fps.zip)。场量后处理不包含在在线计时里。详见 [动画口径](docs/media.md)。
 
+## 参考论文与引用
+
+以下三篇论文分别提供自由界面 CMS 与残余柔度基础、并行软件实现参考，以及表面参数化与柔度表示思路。全文以原始 PDF 附在 [v0.1.0 Release](https://github.com/W-Moorer/CoFlexSim/releases/tag/v0.1.0)，不加入代码 Git 历史。
+
+[下载 BibTeX](references/references.bib) · [文件校验与文献信息](references/papers.json)
+
+**[1] 姚 / Yao**
+
+Yao J-L, Shu X-B, Ren G-X. A free-interface component mode synthesis of moving contact multibodies and its application to gear contacts[J]. International Journal for Numerical Methods in Engineering, 2022, 123(14): 3317–3343. DOI: [10.1002/nme.6970](https://doi.org/10.1002/nme.6970). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Yao-2022-Free-interface-CMS-moving-contact.pdf)
+
+自由界面 CMS、保留模态与接触诱导准静态残余响应的力学基础。
+
+**[2] 田 / Tian**
+
+Tian Z, Yao J, Fan W, Zhou P, Liu Y, Lei S, Ren H. A parallel and memory-aware free-interface component mode synthesis framework for industrial-scale moving contact simulation[J]. Advances in Engineering Software, 2026, 222: 104278. DOI: [10.1016/j.advengsoft.2026.104278](https://doi.org/10.1016/j.advengsoft.2026.104278). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Tian-2026-Parallel-memory-aware-CMS.pdf)
+
+并行与内存受限的 CMS 软件流程参考，包括分解复用、分块构造及 BVH 接触查询。
+
+**[3] 米 / Mi**
+
+Mi J, Ren H. A convex optimization method for contact dynamics between flexible bodies with surface parameterization and residual compliance[J]. Applied Mathematical Modelling, 2027, 162: 117206. DOI: [10.1016/j.apm.2026.117206](https://doi.org/10.1016/j.apm.2026.117206). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Mi-2027-Parameterized-residual-compliance.pdf)
+
+表面参数化、残余柔度函数表达及锥互补接触方法参考。
+
+米的论文在线发表于 2026 年 7 月 21 日，正式卷期为 2027 年 2 月，因此按卷期年份引用为 2027；DOI 中的 `2026` 保持原样。
+
+CoFlexSim 是基于相关文献的独立实现与 GPU 后端扩展；上述文献引用不表示仓库包含作者原程序。README 中的性能表比较本项目注明的后端配置，不是与这三篇作者程序的实测对比。
+
+论文 PDF 保留各自作者／出版社的版权及原文件声明，不适用本仓库代码的 Apache-2.0 许可证。
+
 ## 目录与维护
 
 ```text
@@ -168,6 +198,7 @@ examples/                     三个算例配置与数据校验清单
 results/                      完整响应 CSV、计时／内存及来源记录
 tools/plot_results.py          Python 图形重生成
 docs/                         架构、运行口径与媒体说明
+references/                    三篇参考论文的引用、DOI 与 PDF 校验
 provenance/                    研究快照与发布代码对应记录
 ```
 

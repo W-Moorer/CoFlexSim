@@ -16,3 +16,7 @@
 当前公开契约使用有限法向柔度接触，不用 IPC 障碍势；`ipctk` 依赖不代表本例采用 IPC 接触模型。字体由本机提供，仓库不分发 Times New Roman 等字体。
 
 目前没有对应的正式论文 DOI。引用时注明版本和提交哈希；同模型后端加速不等同于对未运行的作者程序或商业产品的直接比较。
+
+## 参考论文
+
+Release 中的姚、田、米三篇原始 PDF 保留其作者／出版社版权及原文件声明，不纳入代码 Apache-2.0 授权范围。文献信息、DOI 和逐文件 SHA-256 见 [references/papers.json](references/papers.json)，引用格式见 [README](README.md#参考论文与引用)。
