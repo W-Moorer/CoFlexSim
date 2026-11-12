@@ -1,0 +1,28 @@
+{
+  "status": "pass",
+  "frozen_source_count": 234,
+  "public_source_snapshot_count": 128,
+  "unchanged_sources": true,
+  "new_mesh_complete_runs": {
+    "helical": 4000,
+    "cam": 20000
+  },
+  "MP4s": 9,
+  "fps": 60,
+  "frames_per_video": 600,
+  "local_links_valid": true,
+  "public_entry": {
+    "status": "pass",
+    "case": "cam",
+    "steps": 660,
+    "scene_sha256": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048",
+    "relative_differences": {
+      "force": 2.0140051574013292e-13,
+      "refs": 2.1920085665695294e-16,
+      "contact_moment_about_reference_Nm": 1.5118430535145967e-13
+    },
+    "evidence_file": "outputs/new_mesh_public_cam.json",
+    "runtime_sha256": "337682ff11a427f9ef43e24226a6b1afc521933736b5061f314654f017a63cbe"
+  },
+  "checked_utc": "2026-11-12T06:10:15.134521+00:00"
+}

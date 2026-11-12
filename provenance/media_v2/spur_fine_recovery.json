@@ -1,0 +1,28 @@
+{
+  "recovery": {
+    "seconds": 225.96372080012225,
+    "active_surface_displacement_max_error_m": 9.934425921872062e-18,
+    "elastic_displacement_max_m": 0.00014166696768967287,
+    "formula": "u = Phi q + K^-1 S^T f - Phi Kr^-1 Phi_s^T f",
+    "field_model": "body-frame infinitesimal elastic strain, isotropic linear stress, constant per tetrahedron; exterior facets inherit owner element values",
+    "strain_definition": "sqrt(2/3 dev(epsilon):dev(epsilon)), dimensionless; displayed in microstrain",
+    "visualization_displacement_scale": 1.0,
+    "full_volume_stress_max_MPa": 0.8017889649707731,
+    "full_volume_strain_max_microstrain": 34744.18848206685
+  },
+  "capture": {
+    "initialization_s": 16.34656189987436,
+    "online_with_sampling_boundaries_s": 311.3337596964557,
+    "capture_wall_s": 313.03935469989665,
+    "clean_performance_run": false,
+    "samples": 501,
+    "response_parity": {
+      "force": 1.2592983302183744e-09,
+      "refs": 5.972707920113589e-12,
+      "contact_moment_about_reference_Nm": 1.254026611558135e-09
+    },
+    "gpu": "NVIDIA GeForce RTX 3070"
+  },
+  "source_file": "spur_fine_media_capture.json",
+  "source_sha256": "c4735abf10a9eeb1ca2c84a212d069cd7e65cffe977728063c0181cc1980265e"
+}

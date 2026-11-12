@@ -84,7 +84,9 @@
       "contact_moment_about_reference_Nm": 1.6811803888265326e-10
     },
     "platform": "NVIDIA GeForce RTX 3070",
-    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting"
+    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting",
+    "full_run_end_live_GPU_bytes": 1355602752,
+    "full_run_end_reserved_GPU_bytes": 1461161280
   },
   "cam": {
     "scene_sha256": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048",
@@ -171,6 +173,8 @@
       "contact_moment_about_reference_Nm": 2.6390269166835324e-13
     },
     "platform": "NVIDIA GeForce RTX 3070",
-    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting"
+    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting",
+    "full_run_end_live_GPU_bytes": 44349500,
+    "full_run_end_reserved_GPU_bytes": 69067324
   }
 }

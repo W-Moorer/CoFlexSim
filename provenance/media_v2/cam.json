@@ -1,0 +1,58 @@
+{
+  "case": "cam",
+  "outputs": [
+    {
+      "path": "cam_model_60fps.mp4",
+      "bytes": 744295,
+      "sha256": "8701c85a2e873697900fa8c40f30810dc9ba01603b800a9e894f597864bdc65c"
+    },
+    {
+      "path": "cam_stress_60fps.mp4",
+      "bytes": 3861581,
+      "sha256": "952d6e2b14eee259e5951e79f09251d0b5ea780a301b71fe45fdb32aa106a6d8"
+    },
+    {
+      "path": "cam_strain_60fps.mp4",
+      "bytes": 3859995,
+      "sha256": "d6ee56a4fb4b8926f6710c58d665af4d75e35903185ae165d2a18076eee54ec3"
+    }
+  ],
+  "fps": 60,
+  "frames": 600,
+  "width": 1280,
+  "height": 720,
+  "physical_end_s": 10.00000000000073,
+  "contact_center_m": [
+    0.00013751711696386218,
+    0.0059181495488155635,
+    2.470688195898782e-07
+  ],
+  "contact_window_span_m": [
+    0.004943633659160692,
+    0.003,
+    0.009301481774833519
+  ],
+  "statistics": {
+    "stress": {
+      "contact_min": 0.0,
+      "contact_max": 0.12688349187374115,
+      "contact_p995": 0.07946617156267166,
+      "display_max": 0.12688349187374115,
+      "clipped_contact_fraction": 0.0,
+      "full_surface_max": 0.12688349187374115,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    },
+    "strain": {
+      "contact_min": 0.0,
+      "contact_max": 5498.2841796875,
+      "contact_p995": 3443.5341796875,
+      "display_max": 5498.2841796875,
+      "clipped_contact_fraction": 0.0,
+      "full_surface_max": 5498.2841796875,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    }
+  },
+  "field_archive_sha256": "ae6ace63de92746c6b29fe4fe4a55177074039253ff28e2c23750ecda4a4560c",
+  "camera": "fixed contact window plus full-model inset; no deformation amplification",
+  "render_s": 160.48143939999864
+}

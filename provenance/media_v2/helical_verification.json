@@ -1,0 +1,59 @@
+[
+  {
+    "file": "helical_model_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 59.17341036878553
+      },
+      {
+        "frame": 300,
+        "pixel_std": 59.176995172976326
+      },
+      {
+        "frame": 599,
+        "pixel_std": 59.15768894606219
+      }
+    ]
+  },
+  {
+    "file": "helical_stress_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 113.12903007833434
+      },
+      {
+        "frame": 300,
+        "pixel_std": 90.86325075047259
+      },
+      {
+        "frame": 599,
+        "pixel_std": 88.73122673592988
+      }
+    ]
+  },
+  {
+    "file": "helical_strain_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 113.0312274112927
+      },
+      {
+        "frame": 300,
+        "pixel_std": 90.80290904691165
+      },
+      {
+        "frame": 599,
+        "pixel_std": 88.65555334127848
+      }
+    ]
+  }
+]

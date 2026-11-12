@@ -1,0 +1,58 @@
+{
+  "case": "helical",
+  "outputs": [
+    {
+      "path": "helical_model_60fps.mp4",
+      "bytes": 2040716,
+      "sha256": "dda72d505eb439b3008a9f1a422b1b9a9d08293e290a1c3f4c584e3981210363"
+    },
+    {
+      "path": "helical_stress_60fps.mp4",
+      "bytes": 9938251,
+      "sha256": "d41b132a3c60bbf89e56de3220dc0944dd68b5d8fabbc1bce39235993b934490"
+    },
+    {
+      "path": "helical_strain_60fps.mp4",
+      "bytes": 10062749,
+      "sha256": "60fd5fa964f8bafc66f4b8f44f23423c4efbaaf900446a055d0a9501220480fe"
+    }
+  ],
+  "fps": 60,
+  "frames": 600,
+  "width": 1280,
+  "height": 720,
+  "physical_end_s": 0.4999999999999588,
+  "contact_center_m": [
+    0.024022805746644733,
+    0.00010895402403548202,
+    -4.900348256342102e-05
+  ],
+  "contact_window_span_m": [
+    0.008,
+    0.018573559962911528,
+    0.0097497960064793
+  ],
+  "statistics": {
+    "stress": {
+      "contact_min": 0.0,
+      "contact_max": 0.7294520139694214,
+      "contact_p995": 0.13293686509132385,
+      "display_max": 0.13293686509132385,
+      "clipped_contact_fraction": 0.004989622509436245,
+      "full_surface_max": 0.7294520139694214,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    },
+    "strain": {
+      "contact_min": 0.0,
+      "contact_max": 31609.587890625,
+      "contact_p995": 5760.59765625,
+      "display_max": 5760.59765625,
+      "clipped_contact_fraction": 0.004989622509436245,
+      "full_surface_max": 31609.587890625,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    }
+  },
+  "field_archive_sha256": "d0d761c2b0fb3f8c773e3c602cdbc307d294de56496d8256db38857b85e3efcf",
+  "camera": "fixed contact window plus full-model inset; no deformation amplification",
+  "render_s": 181.10965869994834
+}
