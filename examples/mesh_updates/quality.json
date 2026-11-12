@@ -1,0 +1,335 @@
+{
+  "helical": {
+    "source_sha256": "13fc45c70fc93d2f051309b01a263e09caf8a39ad038742251bf2c4ebbe4da69",
+    "scene_sha256": "df3698204c9b3ee5e2c94eb6861ec3cb95214827ad7cef8fa8dbe19eaeb392c3",
+    "bodies": [
+      {
+        "body": 0,
+        "action": "remeshed",
+        "before": {
+          "shape_quantiles": [
+            0.000291436435004521,
+            0.011177876416275748,
+            0.09251604121301535,
+            0.7696838692294591
+          ],
+          "min_dihedral_deg": 1.0569015954976793,
+          "max_dihedral_deg": 174.91764245263852,
+          "below_10_deg": 3768,
+          "above_160_deg": 48,
+          "below_shape_002": 447,
+          "distorted_count": 3837,
+          "tetrahedra": 9828
+        },
+        "after": {
+          "shape_quantiles": [
+            0.03857193672034469,
+            0.11777641474796495,
+            0.5683823631129362,
+            0.9976136821888744
+          ],
+          "min_dihedral_deg": 15.236876006438896,
+          "max_dihedral_deg": 152.4011863962013,
+          "below_10_deg": 0,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 0,
+          "tetrahedra": 50237
+        },
+        "old_nodes": 3864,
+        "nodes": 14436,
+        "old_tetrahedra": 9828,
+        "tetrahedra": 50237,
+        "volume_relative_change": -0.00044652895881514,
+        "mesh_seconds": 58.2101653998252,
+        "contact_faces": 12336,
+        "hub_nodes": 360,
+        "relocation": {
+          "before": {
+            "shape_quantiles": [
+              0.03857193672034469,
+              0.11777641474796495,
+              0.5683823631129362,
+              0.9976136821888744
+            ],
+            "min_dihedral_deg": 15.236876006438896,
+            "max_dihedral_deg": 152.4011863962013,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 0,
+            "distorted_count": 0,
+            "tetrahedra": 50237
+          },
+          "after": {
+            "shape_quantiles": [
+              0.03857193672034469,
+              0.11777641474796495,
+              0.5683823631129362,
+              0.9976136821888744
+            ],
+            "min_dihedral_deg": 15.236876006438896,
+            "max_dihedral_deg": 152.4011863962013,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 0,
+            "distorted_count": 0,
+            "tetrahedra": 50237
+          },
+          "moves": [],
+          "surface_nodes_unchanged": true
+        },
+        "audit": {
+          "nodes": 14436,
+          "tets": 50237,
+          "positive_volume": true,
+          "min_volume": 2.297839375009176e-12,
+          "reference_topological_winding_consistent": true,
+          "reference_geometric_winding_consistent": true,
+          "induced_outward_faces_with_positive_centroid_dot": 0,
+          "manifold_face_counts": true,
+          "watertight": true,
+          "internal_faces_with_same_side_tetrahedra": 0,
+          "total_volume_m3": 9.875494236963309e-06,
+          "duplicated_tets": 0
+        }
+      },
+      {
+        "body": 1,
+        "action": "remeshed",
+        "before": {
+          "shape_quantiles": [
+            0.0019094218480793193,
+            0.008846590980784387,
+            0.08415589109692813,
+            0.7847278253017472
+          ],
+          "min_dihedral_deg": 1.3121829221738646,
+          "max_dihedral_deg": 170.46878662659836,
+          "below_10_deg": 6288,
+          "above_160_deg": 90,
+          "below_shape_002": 843,
+          "distorted_count": 6732,
+          "tetrahedra": 14814
+        },
+        "after": {
+          "shape_quantiles": [
+            0.02008488373354494,
+            0.12494943375379178,
+            0.5871939622661618,
+            0.9993451137046794
+          ],
+          "min_dihedral_deg": 14.981984330463039,
+          "max_dihedral_deg": 157.98799021290574,
+          "below_10_deg": 0,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 0,
+          "tetrahedra": 85819
+        },
+        "old_nodes": 5932,
+        "nodes": 24120,
+        "old_tetrahedra": 14814,
+        "tetrahedra": 85819,
+        "volume_relative_change": -1.0916215177014799e-05,
+        "mesh_seconds": 109.56318830000237,
+        "contact_faces": 17980,
+        "hub_nodes": 540,
+        "relocation": {
+          "before": {
+            "shape_quantiles": [
+              0.016704351231875046,
+              0.12494943375379178,
+              0.5871942656569271,
+              0.9993451137046794
+            ],
+            "min_dihedral_deg": 14.981984330463039,
+            "max_dihedral_deg": 158.47461293782968,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 2,
+            "distorted_count": 2,
+            "tetrahedra": 85819
+          },
+          "after": {
+            "shape_quantiles": [
+              0.02008488373354494,
+              0.12494943375379178,
+              0.5871939622661618,
+              0.9993451137046794
+            ],
+            "min_dihedral_deg": 14.981984330463039,
+            "max_dihedral_deg": 157.98799021290574,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 0,
+            "distorted_count": 0,
+            "tetrahedra": 85819
+          },
+          "moves": [
+            {
+              "node": 22891,
+              "adjacent_elements": 18,
+              "displacement_m": 4.922742964841923e-06
+            },
+            {
+              "node": 22892,
+              "adjacent_elements": 18,
+              "displacement_m": 1.1664331389902065e-05
+            }
+          ],
+          "surface_nodes_unchanged": true
+        },
+        "audit": {
+          "nodes": 24120,
+          "tets": 85819,
+          "positive_volume": true,
+          "min_volume": 1.1187614503037558e-12,
+          "reference_topological_winding_consistent": true,
+          "reference_geometric_winding_consistent": true,
+          "induced_outward_faces_with_positive_centroid_dot": 0,
+          "manifold_face_counts": true,
+          "watertight": true,
+          "internal_faces_with_same_side_tetrahedra": 0,
+          "total_volume_m3": 2.2146931350841827e-05,
+          "duplicated_tets": 0
+        }
+      }
+    ],
+    "geometry": "Same design dimensions; smooth CAD tooth flank / circular cam represented with new surface tessellation",
+    "status": "mesh_quality_checked; dynamics require a new preparation and validation"
+  },
+  "cam": {
+    "source_sha256": "1e26fa88c42e39e9c8fdcbc1fb5f05aee19f26d0ea0428ced199c991d17096f4",
+    "scene_sha256": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048",
+    "bodies": [
+      {
+        "body": 0,
+        "action": "remeshed",
+        "before": {
+          "shape_quantiles": [
+            0.1430877826387875,
+            0.14308778263878758,
+            0.2757189502475885,
+            0.40625566885646014
+          ],
+          "min_dihedral_deg": 8.58717645489653,
+          "max_dihedral_deg": 111.02062099884486,
+          "below_10_deg": 64,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 64,
+          "tetrahedra": 960
+        },
+        "after": {
+          "shape_quantiles": [
+            0.15598978813044545,
+            0.2373429614222464,
+            0.6533580650604364,
+            0.988874730502989
+          ],
+          "min_dihedral_deg": 20.137442020340597,
+          "max_dihedral_deg": 143.08917691579316,
+          "below_10_deg": 0,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 0,
+          "tetrahedra": 2572
+        },
+        "old_nodes": 384,
+        "nodes": 729,
+        "old_tetrahedra": 960,
+        "tetrahedra": 2572,
+        "volume_relative_change": 0.0006929102131332243,
+        "mesh_seconds": 5.199779300019145,
+        "contact_faces": 394,
+        "hub_nodes": 81,
+        "relocation": {
+          "before": {
+            "shape_quantiles": [
+              0.15598978813044545,
+              0.2373429614222464,
+              0.6533580650604364,
+              0.988874730502989
+            ],
+            "min_dihedral_deg": 20.137442020340597,
+            "max_dihedral_deg": 143.08917691579316,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 0,
+            "distorted_count": 0,
+            "tetrahedra": 2572
+          },
+          "after": {
+            "shape_quantiles": [
+              0.15598978813044545,
+              0.2373429614222464,
+              0.6533580650604364,
+              0.988874730502989
+            ],
+            "min_dihedral_deg": 20.137442020340597,
+            "max_dihedral_deg": 143.08917691579316,
+            "below_10_deg": 0,
+            "above_160_deg": 0,
+            "below_shape_002": 0,
+            "distorted_count": 0,
+            "tetrahedra": 2572
+          },
+          "moves": [],
+          "surface_nodes_unchanged": true
+        },
+        "audit": {
+          "nodes": 729,
+          "tets": 2572,
+          "positive_volume": true,
+          "min_volume": 3.079287483677923e-11,
+          "reference_topological_winding_consistent": true,
+          "reference_geometric_winding_consistent": true,
+          "induced_outward_faces_with_positive_centroid_dot": 0,
+          "manifold_face_counts": true,
+          "watertight": true,
+          "internal_faces_with_same_side_tetrahedra": 0,
+          "total_volume_m3": 4.019987503785382e-07,
+          "duplicated_tets": 0
+        }
+      },
+      {
+        "body": 1,
+        "action": "retained_quality_mesh",
+        "before": {
+          "shape_quantiles": [
+            0.4568975873415952,
+            0.4568975873415952,
+            0.456897587341596,
+            0.456897587341597
+          ],
+          "min_dihedral_deg": 33.69006752597977,
+          "max_dihedral_deg": 90.0,
+          "below_10_deg": 0,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 0,
+          "tetrahedra": 216
+        },
+        "after": {
+          "shape_quantiles": [
+            0.4568975873415952,
+            0.4568975873415952,
+            0.456897587341596,
+            0.456897587341597
+          ],
+          "min_dihedral_deg": 33.69006752597977,
+          "max_dihedral_deg": 90.0,
+          "below_10_deg": 0,
+          "above_160_deg": 0,
+          "below_shape_002": 0,
+          "distorted_count": 0,
+          "tetrahedra": 216
+        },
+        "nodes": 84,
+        "tetrahedra": 216
+      }
+    ],
+    "geometry": "Same design dimensions; smooth CAD tooth flank / circular cam represented with new surface tessellation",
+    "status": "mesh_quality_checked; dynamics require a new preparation and validation"
+  }
+}

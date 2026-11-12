@@ -1,120 +1,139 @@
 # CoFlexSim
 
-**面向模态柔性体接触动力学的统一 C++/CUDA 在线求解框架。**
+**模态柔性体接触动力学的 C++/CUDA 求解框架。**
 
-CoFlexSim 将少量动态模态与整体结构的表面残余柔度耦合，用统一接触流程计算直齿轮、斜齿轮和凸轮–从动件的运动与传力。Python 负责模型初始化、离线准备和后处理；C++ 管理在线时间推进与区域数据供给；CUDA 执行几何查询、压力积分、耦合求解和状态验收。
+CoFlexSim 用动态模态描述整体运动，用表面残余柔度恢复接触引起的局部弹性响应。直齿轮、斜齿轮与凸轮共用同一后端，支持 CPU 参照、GPU 并行求解和应力应变后处理。
 
-[快速运行](#快速运行) · [三个算例](#三个算例) · [响应曲线](#响应曲线) · [时间开销](#时间开销) · [内存对比](#内存对比) · [动画下载](#动画下载) · [架构说明](docs/architecture.md)
+[算例与动画](#算例与动画) · [计算流程](#计算流程) · [结果与性能](#结果与性能) · [快速开始](#快速开始) · [参考文献](#参考文献)
 
-![三个算例的模型、应力与应变](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/overview.png)
+## 算例与动画
 
-## 仓库内容
+以下动画和性能对应 v0.1.0 已完成的计算；斜齿轮与凸轮的[新网格及质量对比](docs/mesh_quality.md)已另行提供。
 
-- 完整的统一求解依赖：有限元算子准备、模态／残余柔度、CPU 参照路径、GPU 几何与接触求解、C++ 区域缓存及时间调度。
-- 同一个 `coflex.py` 入口，通过配置选择 `cpu_columns`、`host_cuda` 或 `native_cuda`，算例几何不决定求解器实现。
-- 三个真实模型的输入、细网格直齿轮预计算模态算子、长时程响应 CSV、测量记录、可复现绘图脚本。
-- 9 个 **60 fps MP4**：每例均包含整体模型、von Mises 应力和等效偏应变动画。
+| 算例 | 节点 / 四面体 | 步长 | 仿真时长 |
+|---|---:|---:|---:|
+| 细网格直齿轮 | 67,586 / 235,504 | 125 μs | 0.5 s |
+| 斜齿轮 | 9,796 / 24,642 | 125 μs | 0.5 s |
+| 凸轮与从动件 | 468 / 1,176 | 500 μs | 10 s |
 
-本版保留已验收的数值流程。完整残余柔度库存于主机内存或磁盘，当前区域通过有限大小的缓存进入显存；尚非全部柔度常驻 GPU 的方案。在线耗时计入区域查询、读入、传输与重试，单次矩阵查询时间不等于完整求解时间。
+视频为 **60 fps MP4**，可直接播放。应力、应变采用整段固定色标，变形比例为 1。齿轮慢放 20 倍，凸轮原速播放。
 
-## 三个算例
+### 直齿轮
 
-节点和单元数量为整套机构合计。
+<!-- VIDEO spur_fine_model_60fps.mp4 -->
 
-| 算例 | 节点 | 四面体 | 时间步 | 长时程 | 动态模态数 |
+<details>
+<summary>应力与应变动画</summary>
+
+von Mises 应力
+
+<!-- VIDEO spur_fine_stress_60fps.mp4 -->
+
+等效弹性应变
+
+<!-- VIDEO spur_fine_strain_60fps.mp4 -->
+
+</details>
+
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_strain_60fps.mp4)
+
+### 斜齿轮
+
+<!-- VIDEO helical_model_60fps.mp4 -->
+
+<details>
+<summary>应力与应变动画</summary>
+
+von Mises 应力
+
+<!-- VIDEO helical_stress_60fps.mp4 -->
+
+等效弹性应变
+
+<!-- VIDEO helical_strain_60fps.mp4 -->
+
+</details>
+
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_strain_60fps.mp4)
+
+### 凸轮与从动件
+
+<!-- VIDEO guided_cam_model_60fps.mp4 -->
+
+<details>
+<summary>应力与应变动画</summary>
+
+von Mises 应力
+
+<!-- VIDEO guided_cam_stress_60fps.mp4 -->
+
+等效弹性应变
+
+<!-- VIDEO guided_cam_strain_60fps.mp4 -->
+
+</details>
+
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_strain_60fps.mp4)
+
+[网格质量与更新](docs/mesh_quality.md) · [模型参数](examples/README.md) · [场量定义](docs/media.md)
+
+## 计算流程
+
+![CoFlexSim workflow](docs/assets/workflow.png)
+
+离线构造模态与整件表面残余柔度；在线由 C++ 管理时间推进和区域缓存，GPU 完成表面更新、BVH 查询、接触积分与耦合求解。应力应变在后处理恢复。
+
+[算法与代码结构](docs/architecture.md)
+
+## 结果与性能
+
+相同模型、步长下，统一 C++/CUDA 后端与参考 GPU 流程的长时程响应如下。
+
+![Full-trajectory response comparison](docs/assets/response_full.png)
+
+[末段响应图](docs/assets/response_late.png) · [完整响应 CSV 与误差定义](results/README.md)
+
+### 在线时间
+
+RTX 3070，单位秒。短窗各跑三次，报告中位数；预计算与初始化单列。
+
+| 算例 / 短窗 | CPU | 原 GPU | 优化 GPU | C++/CUDA | 相对原 GPU |
 |---|---:|---:|---:|---:|---:|
-| 细网格直齿轮 `spur` | 67,586 | 235,504 | 125 μs | 0.5 s / 4,000 步 | 112 + 225 |
-| 斜齿轮 `helical` | 9,796 | 24,642 | 125 μs | 0.5 s / 4,000 步 | 333 + 499 |
-| 凸轮–从动件 `cam` | 468 | 1,176 | 500 μs | 10 s / 20,000 步 | 1 + 0 |
+| 直齿轮 / 200–212 ms | — | 4.381 | — | **3.115** | **1.41×** |
+| 斜齿轮 / 0–12 ms | 96.009 | 2.867 | 1.952 | **1.451** | **1.98×** |
+| 凸轮 / 0–330 ms | 55.168 | 3.036 | 2.284 | **1.852** | **1.64×** |
 
-模型采用小弹性变形、有限参考运动和无摩擦法向接触。齿轮内孔与参考点耦合，凸轮从动件沿指定方向运动。动态模态负责惯性响应，残余柔度保留截断方向的准静态接触响应及跨区域耦合。详见 [模型与复现说明](examples/README.md)。
+长时程的完整测量记录：
 
-## 响应曲线
+| 算例 / 平台 | 参考 GPU / s | C++/CUDA / s | 比值 |
+|---|---:|---:|---:|
+| 直齿轮 0.5 s / 3070，首轮 | 506.922 | 194.745 | 2.60× |
+| 直齿轮 0.5 s / 3070，复测 | 173.795 | 138.783 | 1.25× |
+| 斜齿轮 0.5 s / 3070，首轮 | 68.847 | 77.461 | 0.89× |
+| 斜齿轮 0.5 s / 3070，复测 | 63.585 | 54.564 | 1.17× |
+| 凸轮 10 s / 3070 | 60.118 | 54.589 | 1.10× |
+| 斜齿轮 0.5 s / 3090 | 43.655 | 42.053 | 1.04× |
+| 凸轮 10 s / 3090 | 49.979 | 48.842 | 1.02× |
 
-下面比较**相同模型、相同步长的原／优化 GPU 流程与统一 C++/CUDA 后端**。全程使用原始时间轴，没有平移相位或拟合幅值；曲线接近重合，稀疏圆标记用于辨认新后端。
+长程为单次实测值，保留首轮和复测以呈现读盘缓存与运行顺序的影响。参考后端、硬件配置和预计算时间见 [性能记录](docs/performance.md)。
 
-![全程响应](docs/assets/response_full.svg)
+### 内存
 
-![末段响应](docs/assets/response_late.svg)
+单位 MiB，来自独立内存诊断。
 
-| 长时程一致性 | 接触力相对 L2 差异 | 传动误差／从动件位移相对 L2 差异 |
-|---|---:|---:|
-| 细网格直齿轮 0.5 s | 7.12 × 10⁻¹⁰ | 2.34 × 10⁻¹⁰ |
-| 斜齿轮 0.5 s，首次配对 | 4.21 × 10⁻¹⁰ | 8.85 × 10⁻¹¹ |
-| 凸轮 10 s | 6.41 × 10⁻¹³ | 1.72 × 10⁻¹⁴ |
-
-这些数字验证的是**后端迁移的一致性**，不代表相对于独立 FEM 的工程误差，也不是空间／时间离散误差。当前发布未新增 Abaqus 验证。误差定义、完整测量记录和原始记录 SHA-256 见 [结果说明](results/README.md)。
-
-## 时间开销
-
-主要平台：**RTX 3070 8 GiB、Ryzen 9 5900X、32 GiB RAM、Windows 11、CUDA 12.6、Python 3.12.7、CuPy 13.6**。CPU 参照为当前单线程实现；测试在共享桌面环境顺序运行。
-
-### 三次短窗测量
-
-单位为秒，均为三次中位数。预计算、输入加载、初始化、图像／视频输出不计入在线求解。
-
-| 算例与时间区间 | 当前 CPU | 原 GPU | 优化主机调度 GPU | C++/CUDA | 相对原 GPU |
-|---|---:|---:|---:|---:|---:|
-| 直齿轮 200–212 ms | — | 4.381 | — | **3.115** | **1.41×** |
-| 斜齿轮 0–12 ms | 96.009 | 2.867 | 1.952 | **1.451** | **1.98×** |
-| 凸轮 0–330 ms | 55.168 | 3.036 | 2.284 | **1.852** | **1.64×** |
-
-斜齿轮和凸轮相对当前 CPU 实现分别为 66.17×、29.78×。这是对本仓库 CPU 实现的加速，不能推广为相对最优 CPU 算法或商业 FEM 的加速。细网格直齿轮 CPU 仅测了 1 ms 短前缀，不外推到 12 ms 或 0.5 s。
-
-![三次短窗计时](docs/assets/timing_short.svg)
-
-凸轮 CPU／原 GPU 数据来自上一轮相同模型、步长的测量，优化 GPU／原生后端来自最终轮；各轮来源完整保留。
-
-### 长时程测量
-
-以下是**实际单次观察值，不是三次长程中位数**。原始和追加测量均列出，避免把读盘缓存、运行次序的影响当作稳定收益。
-
-| 算例 | 平台／测量 | 参照 GPU 在线 / s | C++/CUDA 在线 / s | 比值 |
-|---|---|---:|---:|---:|
-| 直齿轮 0.5 s | 3070，首次 | 506.922 | 194.745 | 2.60× |
-| 直齿轮 0.5 s | 3070，追加 | 173.795 | **138.783** | 1.25× |
-| 斜齿轮 0.5 s | 3070，首次 | 68.847 | 77.461 | 0.89× |
-| 斜齿轮 0.5 s | 3070，交换顺序复测 | 63.585 | **54.564** | 1.17× |
-| 凸轮 10 s | 3070 | 60.118 | **54.589** | 1.10× |
-| 斜齿轮 0.5 s | 3090 | 43.655 | **42.053** | 1.04× |
-| 凸轮 10 s | 3090 | 49.979 | **48.842** | 1.02× |
-
-直齿轮参照为原 GPU 流程；斜齿轮／凸轮参照为已优化主机调度 GPU。直齿轮库位于 SATA HDD，未清空或锁定 OS 缓存。3090 平台为 Linux、i7-14700K、CUDA 12.8，因此跨平台数值不能解释为单纯显卡型号提升。RTX 4090 的 `sm_89` 编译目标已提供，尚无 4090 实机验收数据。
-
-### 预计算与在线分开
-
-| 算例 | 模态／算子准备 | 柔度库与保守边界准备 | 在线报告方式 |
-|---|---:|---:|---|
-| 细网格直齿轮 | 复用已有数据 | 复用约 9.46 GiB 离线库 | 追加原生测量：加载 40.407 s；小算子 4.959 s；初始化 37.088 s；在线 138.783 s；检查点 I/O 12.912 s |
-| 斜齿轮 | 57.607 s | 84.445 s | 每次加载／初始化另列 |
-| 凸轮 | 1.782 s | 0.070 s | 每次加载／初始化另列 |
-
-准备时间来自对应历史测量；发布入口采用可恢复的文件库，首次本地准备耗时以本机记录为准。复用旧数据不等于预计算成本为零。
-
-## 内存对比
-
-单位 MiB。GPU 数值为独立短窗诊断中的活跃分配峰值加原生工作区上界，不包含其他程序、CUDA 上下文和未使用的池预留。
-
-| 算例 | 参考 GPU 显存 | C++/CUDA 显存 | 参考主机 RSS | C++/CUDA 主机 RSS |
+| 算例 | 参考显存 | C++/CUDA 显存 | 参考主机 RSS | C++/CUDA 主机 RSS |
 |---|---:|---:|---:|---:|
-| 细网格直齿轮 | 1,364.3 | 2,079.0 | 2,150.5 | 2,169.2 |
+| 直齿轮 | 1,364.3 | 2,079.0 | 2,150.5 | 2,169.2 |
 | 斜齿轮 | 870.6 | 870.7 | 2,111.8 | 2,106.3 |
 | 凸轮 | 88.8 | 63.8 | 643.3 | 651.7 |
 
-直齿轮 RSS 是采样值，另外两例为进程峰值；参考流程与上一表相同。本版直齿轮通过预留容量减少在线重建，显存增加；凸轮显存下降，斜齿轮基本持平。
+## 快速开始
 
-![内存对比](docs/assets/memory.svg)
-
-## 快速运行
-
-建议先运行最小的凸轮算例。需要 NVIDIA GPU、兼容 CUDA 12.6 的驱动、CUDA Toolkit ≥ 12.6、CMake ≥ 3.22、C++17 编译器和 Python 3.12。Windows 在 Visual Studio x64 开发者终端执行；Linux 使用 GCC/G++ 与 OpenMP。
+环境：NVIDIA GPU、CUDA Toolkit ≥ 12.6、C++17、CMake ≥ 3.22、Python 3.12。
 
 ```bash
 git clone https://github.com/W-Moorer/CoFlexSim.git
 cd CoFlexSim
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux:   source .venv/bin/activate
 python -m pip install -r requirements.txt
 python coflex.py build
 python coflex.py check
@@ -123,87 +142,16 @@ python coflex.py prepare cam
 python coflex.py run cam --backend native_cuda
 ```
 
-`build` 下载并核验 Eigen 3.4.0；也可用 `--eigen-root /path/to/eigen-3.4.0`。`fetch-data` 下载三个网格及细网格模态算子并核验 SHA-256。临时文件、缓存、数据和输出默认放在项目目录中，请选择空间充足的盘。
+使用 `--full` 运行完整轨迹；`--backend cpu_columns` 或 `host_cuda` 切换参照后端。Windows 从 Visual Studio x64 开发者终端构建。
 
-```bash
-# 相同模型的 CPU / 优化 GPU 对照
-python coflex.py run cam --backend cpu_columns --output outputs/cam_cpu.json
-python coflex.py run cam --backend host_cuda --output outputs/cam_host.json
-# 10 s 完整轨迹
-python coflex.py run cam --full --output outputs/cam_native_10s.json
-# 斜齿轮 0.5 s
-python coflex.py prepare helical
-python coflex.py run helical --full --output outputs/helical_native_05s.json
-# 最新细网格直齿轮；离线库需约 9.46 GiB 磁盘
-python coflex.py prepare spur --bank-budget-gib 12
-python coflex.py run spur --full --output outputs/spur_native_05s.json
-# 200–212 ms 换齿短窗
-python coflex.py run spur --restart gpu-contact/data/spur/short_window_state.npz --steps 96 --output outputs/spur_window.json
-# 内存仪器单独运行
-python coflex.py run cam --memory --output outputs/cam_memory.json
-```
+[详细复现步骤](examples/README.md) · [架构](docs/architecture.md) · [许可证](LICENSE)
 
-正式重复使用新进程和不同 `--output`，已有结果不覆盖。第一次初始化包含 JIT 开销，在线计时从初始化完成后开始。详见 [复现说明](examples/README.md)。
+## 参考文献
 
-## 动画下载
+1. Yao J-L, Shu X-B, Ren G-X. A free-interface component mode synthesis of moving contact multibodies and its application to gear contacts[J]. International Journal for Numerical Methods in Engineering, 2022, 123(14): 3317–3343. DOI: [10.1002/nme.6970](https://doi.org/10.1002/nme.6970). [PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Yao-2022-Free-interface-CMS-moving-contact.pdf)
 
-每段 600 帧，60 fps，1280×720，H.264 MP4。齿轮 0.5 s 物理过程以 20 倍慢放显示为 10 s；凸轮 10 s 为原速。场量使用整段固定色标、真实变形比例，Latin 文字为 Times New Roman。
+2. Tian Z, Yao J, Fan W, Zhou P, Liu Y, Lei S, Ren H. A parallel and memory-aware free-interface component mode synthesis framework for industrial-scale moving contact simulation[J]. Advances in Engineering Software, 2026, 222: 104278. DOI: [10.1016/j.advengsoft.2026.104278](https://doi.org/10.1016/j.advengsoft.2026.104278). [PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Tian-2026-Parallel-memory-aware-CMS.pdf)
 
-| 算例 | 整体模型 | 应力 | 应变 |
-|---|---|---|---|
-| 最新细网格直齿轮 | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_model_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_stress_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_strain_60fps.mp4) |
-| 斜齿轮 | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_model_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_stress_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_strain_60fps.mp4) |
-| 凸轮–从动件 | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_model_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_stress_60fps.mp4) | [MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_strain_60fps.mp4) |
+3. Mi J, Ren H. A convex optimization method for contact dynamics between flexible bodies with surface parameterization and residual compliance[J]. Applied Mathematical Modelling, 2027, 162: 117206. DOI: [10.1016/j.apm.2026.117206](https://doi.org/10.1016/j.apm.2026.117206). [PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Mi-2027-Parameterized-residual-compliance.pdf)
 
-[下载全部动画、海报和元数据](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/CoFlexSim-media-60fps.zip)。场量后处理不包含在在线计时里。详见 [动画口径](docs/media.md)。
-
-## 参考论文与引用
-
-以下三篇论文分别提供自由界面 CMS 与残余柔度基础、并行软件实现参考，以及表面参数化与柔度表示思路。全文以原始 PDF 附在 [v0.1.0 Release](https://github.com/W-Moorer/CoFlexSim/releases/tag/v0.1.0)，不加入代码 Git 历史。
-
-[下载 BibTeX](references/references.bib) · [文件校验与文献信息](references/papers.json)
-
-**[1] 姚 / Yao**
-
-Yao J-L, Shu X-B, Ren G-X. A free-interface component mode synthesis of moving contact multibodies and its application to gear contacts[J]. International Journal for Numerical Methods in Engineering, 2022, 123(14): 3317–3343. DOI: [10.1002/nme.6970](https://doi.org/10.1002/nme.6970). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Yao-2022-Free-interface-CMS-moving-contact.pdf)
-
-自由界面 CMS、保留模态与接触诱导准静态残余响应的力学基础。
-
-**[2] 田 / Tian**
-
-Tian Z, Yao J, Fan W, Zhou P, Liu Y, Lei S, Ren H. A parallel and memory-aware free-interface component mode synthesis framework for industrial-scale moving contact simulation[J]. Advances in Engineering Software, 2026, 222: 104278. DOI: [10.1016/j.advengsoft.2026.104278](https://doi.org/10.1016/j.advengsoft.2026.104278). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Tian-2026-Parallel-memory-aware-CMS.pdf)
-
-并行与内存受限的 CMS 软件流程参考，包括分解复用、分块构造及 BVH 接触查询。
-
-**[3] 米 / Mi**
-
-Mi J, Ren H. A convex optimization method for contact dynamics between flexible bodies with surface parameterization and residual compliance[J]. Applied Mathematical Modelling, 2027, 162: 117206. DOI: [10.1016/j.apm.2026.117206](https://doi.org/10.1016/j.apm.2026.117206). [全文 PDF](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/Mi-2027-Parameterized-residual-compliance.pdf)
-
-表面参数化、残余柔度函数表达及锥互补接触方法参考。
-
-米的论文在线发表于 2026 年 7 月 21 日，正式卷期为 2027 年 2 月，因此按卷期年份引用为 2027；DOI 中的 `2026` 保持原样。
-
-CoFlexSim 是基于相关文献的独立实现与 GPU 后端扩展；上述文献引用不表示仓库包含作者原程序。README 中的性能表比较本项目注明的后端配置，不是与这三篇作者程序的实测对比。
-
-论文 PDF 保留各自作者／出版社的版权及原文件声明，不适用本仓库代码的 Apache-2.0 许可证。
-
-## 目录与维护
-
-```text
-coflex.py                     统一命令入口
-gpu-contact/native/           C++ 调度、区域库读取、CUDA 数据供给
-gpu-contact/mechanics/        有限元与接触 C++ 扩展
-gpu-contact/src/              数值流程、CUDA 核、Python 初始化适配
-examples/                     三个算例配置与数据校验清单
-results/                      完整响应 CSV、计时／内存及来源记录
-tools/plot_results.py          Python 图形重生成
-docs/                         架构、运行口径与媒体说明
-references/                    三篇参考论文的引用、DOI 与 PDF 校验
-provenance/                    研究快照与发布代码对应记录
-```
-
-修改求解器后同步更新配置、来源和一致性结果；修改性能数字时保留重复测量、机器环境、预计算口径及不利结果。大网格、动画、离线库和缓存不进入 Git 历史。
-
-本发布已在独立目录重新编译，并完成三个算例的 GPU 短窗核验及凸轮 CPU/GPU 对照，见 [发布验收记录](provenance/release_validation.json)。这些检查不替代或重新标记既有长程性能测量。
-
-许可证：[Apache-2.0](LICENSE)。依赖见 [THIRD_PARTY.md](THIRD_PARTY.md)。目前没有与本发布对应的正式论文 DOI；引用可使用版本号与提交哈希。
+[BibTeX](references/references.bib)

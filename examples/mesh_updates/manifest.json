@@ -1,0 +1,10 @@
+{
+  "asset": "coflexsim-quality-meshes-20261112.zip",
+  "bytes": 2925462,
+  "sha256": "69a502b70987d528322679d8899dbf201a25ea7dc877d127c3839c22092ebfec",
+  "url": "https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/coflexsim-quality-meshes-20261112.zip",
+  "scenes": {
+    "helical": "df3698204c9b3ee5e2c94eb6861ec3cb95214827ad7cef8fa8dbe19eaeb392c3",
+    "cam": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048"
+  }
+}
