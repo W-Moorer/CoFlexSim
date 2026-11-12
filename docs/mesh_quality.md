@@ -21,4 +21,4 @@
 
 [下载两组新网格](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/coflexsim-quality-meshes-20261112.zip) · [逐件质量记录](../examples/mesh_updates/quality.json) · [SHA-256](../examples/mesh_updates/manifest.json)
 
-新输入独立放在 `helical/scene.json` 和 `cam/scene.json`。本次完成的是网格质量与连接验证。README 中的长时程曲线、性能及视频对应 v0.1.0 已运行网格；新网格的模态、残余柔度和动力学结果需重新生成后再替换。
+v0.2.0 将这两组输入设为默认算例，重新构造模态与残余柔度，并完成斜齿轮 0.5 s、凸轮 10 s 的长时程计算。[新旧网格响应、耗时和后端核验](remeshed_results.md)与 README 的动画均对应更新后的网格。旧网格结果保留在 v0.1.0，便于追溯。

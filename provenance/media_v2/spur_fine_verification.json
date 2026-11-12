@@ -1,0 +1,59 @@
+[
+  {
+    "file": "spur_fine_model_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 59.12697232621981
+      },
+      {
+        "frame": 300,
+        "pixel_std": 59.12854815220244
+      },
+      {
+        "frame": 599,
+        "pixel_std": 59.098202244893656
+      }
+    ]
+  },
+  {
+    "file": "spur_fine_stress_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 115.44406364430671
+      },
+      {
+        "frame": 300,
+        "pixel_std": 95.4405605916121
+      },
+      {
+        "frame": 599,
+        "pixel_std": 99.8184403386459
+      }
+    ]
+  },
+  {
+    "file": "spur_fine_strain_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 115.34419634809181
+      },
+      {
+        "frame": 300,
+        "pixel_std": 95.36174301005343
+      },
+      {
+        "frame": 599,
+        "pixel_std": 99.75151356043146
+      }
+    ]
+  }
+]

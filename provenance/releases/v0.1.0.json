@@ -1,0 +1,95 @@
+{
+  "tag": "v0.1.0",
+  "assets": [
+    {
+      "file": "guided_cam_model_60fps.mp4",
+      "bytes": 655004,
+      "sha256": "0ef88c75662400a0eba029d0c5fa01ad924253cb86b099d52c6a52d31fd2dba6"
+    },
+    {
+      "file": "guided_cam_strain_60fps.mp4",
+      "bytes": 1134423,
+      "sha256": "6bd690b6df532edf72c1a7f478404410ea0d2d983705f070f162895ab03516bd"
+    },
+    {
+      "file": "guided_cam_stress_60fps.mp4",
+      "bytes": 1132960,
+      "sha256": "bdad741ae47964ddbea2bc5da450e8c0541d6d87fd37365d20ace04c77d20b7b"
+    },
+    {
+      "file": "helical_model_60fps.mp4",
+      "bytes": 1949635,
+      "sha256": "f7b1e84747eca268f3c4830211a806f1ba8d997ddf3c38eb49de0cd441884f2c"
+    },
+    {
+      "file": "helical_strain_60fps.mp4",
+      "bytes": 1817597,
+      "sha256": "e79f241b611631130ab1babea48b3927eb645bd724f486d4874f5c348957aa42"
+    },
+    {
+      "file": "helical_stress_60fps.mp4",
+      "bytes": 1815504,
+      "sha256": "479992f011b82240da999ea31c1c44f84965e3911f969c31da03b02b42d7ec8b"
+    },
+    {
+      "file": "spur_fine_model_60fps.mp4",
+      "bytes": 1906753,
+      "sha256": "2d466dd99c6967f3611883a50824cb5034ce781830ade96ae72fb0e58766ccda"
+    },
+    {
+      "file": "spur_fine_strain_60fps.mp4",
+      "bytes": 1781449,
+      "sha256": "17d8491e402450249da7b8e1462de8d0eae711f19bdd57cc9d5749f3055c2173"
+    },
+    {
+      "file": "spur_fine_stress_60fps.mp4",
+      "bytes": 1779347,
+      "sha256": "c1c7717e4188350da173a3241f500a31a28ed8f843d8c04558060504bbd3f5b1"
+    },
+    {
+      "file": "overview.png",
+      "bytes": 479581,
+      "sha256": "c697a593853bf2701ff4cf4de889058b498c747f8bfcd821692307f3ea854159"
+    },
+    {
+      "file": "coflexsim-example-data-v0.1.0.zip",
+      "bytes": 5708518,
+      "sha256": "baf7bc59d5f3ea871054aeb57af1ed76c4db97f1313729a03d43c3b098629c7d"
+    },
+    {
+      "file": "coflexsim-spur-runtime-v0.1.0.zip",
+      "bytes": 437344416,
+      "sha256": "487a3b803a82cde7b0182d559c0ecbeead513833349d5380bf47e7f25dfcdf3f"
+    },
+    {
+      "file": "Yao-2022-Free-interface-CMS-moving-contact.pdf",
+      "bytes": 5992424,
+      "sha256": "102460facc478b7fbf0862cca920d0837b1f4966db17fd07526db9023ab584f5",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1002/nme.6970",
+      "copyright": "© 2022 John Wiley & Sons, Ltd."
+    },
+    {
+      "file": "Tian-2026-Parallel-memory-aware-CMS.pdf",
+      "bytes": 9506685,
+      "sha256": "25e0dc45c50acf5ff49418f906048ddbb6a5226b28ad48b98c92236df10d1d9f",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1016/j.advengsoft.2026.104278",
+      "copyright": "© 2026 Elsevier Ltd. All rights are reserved."
+    },
+    {
+      "file": "Mi-2027-Parameterized-residual-compliance.pdf",
+      "bytes": 21466326,
+      "sha256": "eac07f7e402eb685669e42a9fe4241b16b4bc8a08dfce4ff29daaab0139acfd2",
+      "kind": "user_supplied_reference_paper",
+      "doi": "10.1016/j.apm.2026.117206",
+      "copyright": "© 2026 Elsevier Inc. All rights are reserved."
+    },
+    {
+      "file": "coflexsim-quality-meshes-20261112.zip",
+      "bytes": 2925462,
+      "sha256": "69a502b70987d528322679d8899dbf201a25ea7dc877d127c3839c22092ebfec",
+      "kind": "quality_reviewed_mesh_inputs"
+    }
+  ]
+}

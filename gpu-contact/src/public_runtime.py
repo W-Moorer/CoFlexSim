@@ -54,7 +54,8 @@ def fetch_data():
     for item in items:
         path=DATA/item['asset']
         if not path.exists() or sha(path)!=item['sha256']:
-            url=f"https://github.com/W-Moorer/CoFlexSim/releases/download/{manifest['tag']}/{item['asset']}"
+            tag=item.get('tag',manifest['tag'])
+            url=f"https://github.com/W-Moorer/CoFlexSim/releases/download/{tag}/{item['asset']}"
             print('Downloading',item['asset'],flush=True)
             partial=path.with_suffix('.download')
             with urllib.request.urlopen(url,timeout=180) as src,partial.open('wb') as dst:
@@ -85,11 +86,10 @@ def load_scene(case):
 def prepare(case,budget_gib=12.):
     from coflex_core import Body,DEFAULT_POLICY
     from quasistatic_pd import coflex_pd_native
-    from surface_cms import prepare_body,select_principal_for_static_tail
-    from projected_cartesian_inertia import prepare_inertia
+    from fast_modal_precompute import select_modes,prepare_runtime
     from surface_response_source import SparseResidualSource
     from host_surface_library import HostSurfaceLibrary
-    cfg=config(case);scene=load_scene(case);folder=DATA/case/'prepared';folder.mkdir(exist_ok=True)
+    cfg=config(case);scene=load_scene(case);folder=preparation_folder(case,cfg);folder.mkdir(parents=True,exist_ok=True)
     target=folder/'manifest.json'
     if target.exists():
         print('Existing completed preparation:',target);return
@@ -105,8 +105,10 @@ def prepare(case,budget_gib=12.):
         elif 'selected_indices' in cfg:
             raise FileNotFoundError('The fine-gear example requires its verified runtime release asset; run fetch-data.')
         else:
-            P,selection=select_principal_for_static_tail(FE,scene['dt'])
-            b=prepare_body(FE,P,'modal');b.kind='residual';prepare_inertia(FE,P,b)
+            hints=cfg.get('modal_candidate_hints',[512]*len(scene['bodies']))
+            threads=cfg.get('preparation_threads',4)
+            P,selection=select_modes(FE,scene['dt'],candidate_hint=hints[j],threads=threads)
+            b,P=prepare_runtime(FE,P,threads=threads)
             del P
         save_object(bodyfile,b);operator_s=time.perf_counter()-tick
         source=SparseResidualSource(FE,b);identity={'scene_sha256':cfg['scene_sha256'],'body':j,'runtime_sha256':sha(bodyfile)}
@@ -131,9 +133,19 @@ def prepare(case,budget_gib=12.):
     save(target,{'case':case,'scene_sha256':cfg['scene_sha256'],'bodies':records,'offline_only':True})
     print('Prepared',target)
 
+def preparation_folder(case,cfg=None):
+    """Reuse a matching preparation; isolate inputs with a new mesh identity."""
+    cfg=config(case) if cfg is None else cfg
+    legacy=DATA/case/'prepared'
+    manifest=legacy/'manifest.json'
+    if manifest.exists() and json.loads(manifest.read_text()).get('scene_sha256')==cfg['scene_sha256']:
+        return legacy
+    return legacy/cfg['scene_sha256'][:12]
+
+
 def load_prepared(case,path=None):
     from host_surface_library import HostSurfaceLibrary
-    scene=load_scene(case);path=Path(path) if path else DATA/case/'prepared/manifest.json'
+    scene=load_scene(case);path=Path(path) if path else preparation_folder(case)/'manifest.json'
     if not path.exists():raise FileNotFoundError('Run python coflex.py prepare '+case)
     info=json.loads(path.read_text());folder=path.parent
     if info['scene_sha256']!=config(case)['scene_sha256']:raise ValueError('Preparation belongs to a different scene')

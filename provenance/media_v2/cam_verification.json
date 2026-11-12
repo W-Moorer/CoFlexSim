@@ -1,0 +1,59 @@
+[
+  {
+    "file": "cam_model_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 55.223422817975106
+      },
+      {
+        "frame": 300,
+        "pixel_std": 55.18251500678158
+      },
+      {
+        "frame": 599,
+        "pixel_std": 55.18473223044582
+      }
+    ]
+  },
+  {
+    "file": "cam_stress_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 110.0948774171811
+      },
+      {
+        "frame": 300,
+        "pixel_std": 93.03738024484792
+      },
+      {
+        "frame": 599,
+        "pixel_std": 102.98046445862977
+      }
+    ]
+  },
+  {
+    "file": "cam_strain_60fps.mp4",
+    "fps": 60.0,
+    "frames": 600,
+    "probe_frames": [
+      {
+        "frame": 0,
+        "pixel_std": 109.98705959132747
+      },
+      {
+        "frame": 300,
+        "pixel_std": 92.96540159126698
+      },
+      {
+        "frame": 599,
+        "pixel_std": 102.91457926863536
+      }
+    ]
+  }
+]

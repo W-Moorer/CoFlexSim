@@ -1,15 +1,15 @@
 {
-  "pull_request": "https://github.com/W-Moorer/CoFlexSim/pull/1",
+  "pull_request": "https://github.com/W-Moorer/CoFlexSim/pull/2",
   "format": "H.264 MP4, 60 fps",
   "videos": {
-    "spur_fine_model_60fps.mp4": "https://github.com/user-attachments/assets/078023a5-0da2-46de-8b3a-307011e4b28a",
-    "spur_fine_stress_60fps.mp4": "https://github.com/user-attachments/assets/ced349fe-db05-41b6-bd85-405c67a86a0d",
-    "spur_fine_strain_60fps.mp4": "https://github.com/user-attachments/assets/2af82925-cc96-4205-aa92-ff92ca864328",
-    "helical_model_60fps.mp4": "https://github.com/user-attachments/assets/f1878fb1-caf5-4f58-85a2-2606483800ff",
-    "helical_stress_60fps.mp4": "https://github.com/user-attachments/assets/313640e8-31e3-430d-a216-0df97165a42b",
-    "helical_strain_60fps.mp4": "https://github.com/user-attachments/assets/e5b903b8-acc0-4e2c-b1c5-8c422b5f4686",
-    "guided_cam_model_60fps.mp4": "https://github.com/user-attachments/assets/4a178e9c-1383-4189-b0ec-46819603bdcc",
-    "guided_cam_stress_60fps.mp4": "https://github.com/user-attachments/assets/ede5e7c4-51da-4328-a317-ee36b57fe8cf",
-    "guided_cam_strain_60fps.mp4": "https://github.com/user-attachments/assets/54cb9456-5642-4807-a651-ec50f042af5a"
+    "spur_fine_model_60fps.mp4": "https://github.com/user-attachments/assets/e352b887-6998-4f59-9300-eaaf37fd35ed",
+    "spur_fine_stress_60fps.mp4": "https://github.com/user-attachments/assets/3c3c274f-db20-4c23-a787-f77082b53318",
+    "spur_fine_strain_60fps.mp4": "https://github.com/user-attachments/assets/6580145b-2f0c-492a-b8c9-a96e89282adc",
+    "helical_model_60fps.mp4": "https://github.com/user-attachments/assets/2b402778-3414-4868-b47e-f87353ad60ca",
+    "helical_stress_60fps.mp4": "https://github.com/user-attachments/assets/544ce426-9fbb-477c-9f26-43639b069859",
+    "helical_strain_60fps.mp4": "https://github.com/user-attachments/assets/bc757a4d-cf80-4e24-b7cc-50cd7657b3f8",
+    "cam_model_60fps.mp4": "https://github.com/user-attachments/assets/d44fef94-2eee-466b-80e9-fea3436865de",
+    "cam_stress_60fps.mp4": "https://github.com/user-attachments/assets/5ed22b72-30e9-44fb-9f31-fb986c75664a",
+    "cam_strain_60fps.mp4": "https://github.com/user-attachments/assets/6711241e-cf2c-4eaa-a990-cbcf5e49ff31"
   }
 }

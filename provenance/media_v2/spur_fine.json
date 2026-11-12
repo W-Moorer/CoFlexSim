@@ -1,0 +1,58 @@
+{
+  "case": "spur_fine",
+  "outputs": [
+    {
+      "path": "spur_fine_model_60fps.mp4",
+      "bytes": 2044632,
+      "sha256": "ee5250f349925029c819f94eb8a6894071420956520bfa9a5a595f6fd59bcccb"
+    },
+    {
+      "path": "spur_fine_stress_60fps.mp4",
+      "bytes": 8139602,
+      "sha256": "be17ff4106dfa8fc02e50485b5bc9896e6eff4b09ded8383a3ec9ec05bcebaa0"
+    },
+    {
+      "path": "spur_fine_strain_60fps.mp4",
+      "bytes": 8214620,
+      "sha256": "c94193b224823e53203c621e318494a416fe5514597039b51c3d3e27a3e7efef"
+    }
+  ],
+  "fps": 60,
+  "frames": 600,
+  "width": 1280,
+  "height": 720,
+  "physical_end_s": 0.4999999999999588,
+  "contact_center_m": [
+    0.023987514129839835,
+    -4.956564633175776e-05,
+    -1.007079845293489e-07
+  ],
+  "contact_window_span_m": [
+    0.008,
+    0.019946040963288395,
+    0.009309259326255415
+  ],
+  "statistics": {
+    "stress": {
+      "contact_min": 0.0,
+      "contact_max": 0.8017889857292175,
+      "contact_p995": 0.1487230658531189,
+      "display_max": 0.1487230658531189,
+      "clipped_contact_fraction": 0.004989544081327797,
+      "full_surface_max": 0.8017889857292175,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    },
+    "strain": {
+      "contact_min": 0.0,
+      "contact_max": 34744.1875,
+      "contact_p995": 6444.66650390625,
+      "display_max": 6444.66650390625,
+      "clipped_contact_fraction": 0.004989544081327797,
+      "full_surface_max": 34744.1875,
+      "color_transfer": "square-root mapping of physical scalar; fixed bounds throughout sequence"
+    }
+  },
+  "field_archive_sha256": "d70e25da7c7d275eaa7eba98b0c228a4a0b62cdef8ff4fded8dff27334afa44e",
+  "camera": "fixed contact window plus full-model inset; no deformation amplification",
+  "render_s": 113.1184249999933
+}

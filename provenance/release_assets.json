@@ -1,95 +1,57 @@
 {
-  "tag": "v0.1.0",
+  "tag": "v0.2.0",
   "assets": [
     {
-      "file": "guided_cam_model_60fps.mp4",
-      "bytes": 655004,
-      "sha256": "0ef88c75662400a0eba029d0c5fa01ad924253cb86b099d52c6a52d31fd2dba6"
-    },
-    {
-      "file": "guided_cam_strain_60fps.mp4",
-      "bytes": 1134423,
-      "sha256": "6bd690b6df532edf72c1a7f478404410ea0d2d983705f070f162895ab03516bd"
-    },
-    {
-      "file": "guided_cam_stress_60fps.mp4",
-      "bytes": 1132960,
-      "sha256": "bdad741ae47964ddbea2bc5da450e8c0541d6d87fd37365d20ace04c77d20b7b"
-    },
-    {
-      "file": "helical_model_60fps.mp4",
-      "bytes": 1949635,
-      "sha256": "f7b1e84747eca268f3c4830211a806f1ba8d997ddf3c38eb49de0cd441884f2c"
-    },
-    {
-      "file": "helical_strain_60fps.mp4",
-      "bytes": 1817597,
-      "sha256": "e79f241b611631130ab1babea48b3927eb645bd724f486d4874f5c348957aa42"
-    },
-    {
-      "file": "helical_stress_60fps.mp4",
-      "bytes": 1815504,
-      "sha256": "479992f011b82240da999ea31c1c44f84965e3911f969c31da03b02b42d7ec8b"
-    },
-    {
       "file": "spur_fine_model_60fps.mp4",
-      "bytes": 1906753,
-      "sha256": "2d466dd99c6967f3611883a50824cb5034ce781830ade96ae72fb0e58766ccda"
-    },
-    {
-      "file": "spur_fine_strain_60fps.mp4",
-      "bytes": 1781449,
-      "sha256": "17d8491e402450249da7b8e1462de8d0eae711f19bdd57cc9d5749f3055c2173"
+      "bytes": 2044632,
+      "sha256": "ee5250f349925029c819f94eb8a6894071420956520bfa9a5a595f6fd59bcccb"
     },
     {
       "file": "spur_fine_stress_60fps.mp4",
-      "bytes": 1779347,
-      "sha256": "c1c7717e4188350da173a3241f500a31a28ed8f843d8c04558060504bbd3f5b1"
+      "bytes": 8139602,
+      "sha256": "be17ff4106dfa8fc02e50485b5bc9896e6eff4b09ded8383a3ec9ec05bcebaa0"
     },
     {
-      "file": "overview.png",
-      "bytes": 479581,
-      "sha256": "c697a593853bf2701ff4cf4de889058b498c747f8bfcd821692307f3ea854159"
+      "file": "spur_fine_strain_60fps.mp4",
+      "bytes": 8214620,
+      "sha256": "c94193b224823e53203c621e318494a416fe5514597039b51c3d3e27a3e7efef"
     },
     {
-      "file": "coflexsim-example-data-v0.1.0.zip",
-      "bytes": 5708518,
-      "sha256": "baf7bc59d5f3ea871054aeb57af1ed76c4db97f1313729a03d43c3b098629c7d"
+      "file": "helical_model_60fps.mp4",
+      "bytes": 2040716,
+      "sha256": "dda72d505eb439b3008a9f1a422b1b9a9d08293e290a1c3f4c584e3981210363"
     },
     {
-      "file": "coflexsim-spur-runtime-v0.1.0.zip",
-      "bytes": 437344416,
-      "sha256": "487a3b803a82cde7b0182d559c0ecbeead513833349d5380bf47e7f25dfcdf3f"
+      "file": "helical_stress_60fps.mp4",
+      "bytes": 9938251,
+      "sha256": "d41b132a3c60bbf89e56de3220dc0944dd68b5d8fabbc1bce39235993b934490"
     },
     {
-      "file": "Yao-2022-Free-interface-CMS-moving-contact.pdf",
-      "bytes": 5992424,
-      "sha256": "102460facc478b7fbf0862cca920d0837b1f4966db17fd07526db9023ab584f5",
-      "kind": "user_supplied_reference_paper",
-      "doi": "10.1002/nme.6970",
-      "copyright": "© 2022 John Wiley & Sons, Ltd."
+      "file": "helical_strain_60fps.mp4",
+      "bytes": 10062749,
+      "sha256": "60fd5fa964f8bafc66f4b8f44f23423c4efbaaf900446a055d0a9501220480fe"
     },
     {
-      "file": "Tian-2026-Parallel-memory-aware-CMS.pdf",
-      "bytes": 9506685,
-      "sha256": "25e0dc45c50acf5ff49418f906048ddbb6a5226b28ad48b98c92236df10d1d9f",
-      "kind": "user_supplied_reference_paper",
-      "doi": "10.1016/j.advengsoft.2026.104278",
-      "copyright": "© 2026 Elsevier Ltd. All rights are reserved."
+      "file": "cam_model_60fps.mp4",
+      "bytes": 744295,
+      "sha256": "8701c85a2e873697900fa8c40f30810dc9ba01603b800a9e894f597864bdc65c"
     },
     {
-      "file": "Mi-2027-Parameterized-residual-compliance.pdf",
-      "bytes": 21466326,
-      "sha256": "eac07f7e402eb685669e42a9fe4241b16b4bc8a08dfce4ff29daaab0139acfd2",
-      "kind": "user_supplied_reference_paper",
-      "doi": "10.1016/j.apm.2026.117206",
-      "copyright": "© 2026 Elsevier Inc. All rights are reserved."
+      "file": "cam_stress_60fps.mp4",
+      "bytes": 3861581,
+      "sha256": "952d6e2b14eee259e5951e79f09251d0b5ea780a301b71fe45fdb32aa106a6d8"
     },
     {
-      "file": "coflexsim-quality-meshes-20261112.zip",
-      "bytes": 2925462,
-      "sha256": "69a502b70987d528322679d8899dbf201a25ea7dc877d127c3839c22092ebfec",
-      "kind": "quality_reviewed_mesh_inputs"
+      "file": "cam_strain_60fps.mp4",
+      "bytes": 3859995,
+      "sha256": "d6ee56a4fb4b8926f6710c58d665af4d75e35903185ae165d2a18076eee54ec3"
+    },
+    {
+      "file": "coflexsim-example-data-v0.2.0.zip",
+      "bytes": 8126909,
+      "sha256": "0af0d5978b29c69c19f1d7dd64d5d366ea72c58af8e9023169a2277b47c6e79e"
     }
-  ]
+  ],
+  "reused_assets_tag": "v0.1.0",
+  "reused_assets": "fine-spur modal runtime and the three cited paper PDFs"
 }
