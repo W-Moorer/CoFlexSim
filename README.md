@@ -2,130 +2,123 @@
 
 **模态柔性体接触动力学的 C++/CUDA 求解框架。**
 
-CoFlexSim 用动态模态描述整体运动，用表面残余柔度恢复接触引起的局部弹性响应。直齿轮、斜齿轮与凸轮共用同一后端，支持 CPU 参照、GPU 并行求解和应力应变后处理。
+CoFlexSim 用动态模态描述整体运动，用表面残余柔度恢复接触引起的局部弹性响应。三个算例共用同一后端，应力和应变由接受状态在后处理恢复。
 
 [算例与动画](#算例与动画) · [计算流程](#计算流程) · [结果与性能](#结果与性能) · [快速开始](#快速开始) · [参考文献](#参考文献)
 
 ## 算例与动画
 
-以下动画和性能对应 v0.1.0 已完成的计算；斜齿轮与凸轮的[新网格及质量对比](docs/mesh_quality.md)已另行提供。
+斜齿轮和凸轮已采用重划网格完成长时程计算。直齿轮沿用已验证的细网格。
 
 | 算例 | 节点 / 四面体 | 步长 | 仿真时长 |
 |---|---:|---:|---:|
 | 细网格直齿轮 | 67,586 / 235,504 | 125 μs | 0.5 s |
-| 斜齿轮 | 9,796 / 24,642 | 125 μs | 0.5 s |
-| 凸轮与从动件 | 468 / 1,176 | 500 μs | 10 s |
+| 斜齿轮 | 38,556 / 136,056 | 125 μs | 0.5 s |
+| 凸轮与从动件 | 813 / 2,788 | 500 μs | 10 s |
 
-视频为 **60 fps MP4**，可直接播放。应力、应变采用整段固定色标，变形比例为 1。齿轮慢放 20 倍，凸轮原速播放。
+九段视频均为 **60 fps MP4**。应力、应变视频采用接触区特写，附整体位置小图与固定色标；实际变形比例为 1。齿轮慢放 20 倍，凸轮原速播放。
 
 ### 直齿轮
 
-https://github.com/user-attachments/assets/078023a5-0da2-46de-8b3a-307011e4b28a
+<!-- VIDEO spur_fine_model_60fps.mp4 -->
 
 <details>
-<summary>应力与应变动画</summary>
+<summary>接触区应力与应变特写</summary>
 
 von Mises 应力
 
-https://github.com/user-attachments/assets/ced349fe-db05-41b6-bd85-405c67a86a0d
+<!-- VIDEO spur_fine_stress_60fps.mp4 -->
 
 等效弹性应变
 
-https://github.com/user-attachments/assets/2af82925-cc96-4205-aa92-ff92ca864328
+<!-- VIDEO spur_fine_strain_60fps.mp4 -->
 
 </details>
 
-[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/spur_fine_strain_60fps.mp4)
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/spur_fine_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/spur_fine_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/spur_fine_strain_60fps.mp4)
 
 ### 斜齿轮
 
-https://github.com/user-attachments/assets/f1878fb1-caf5-4f58-85a2-2606483800ff
+<!-- VIDEO helical_model_60fps.mp4 -->
 
 <details>
-<summary>应力与应变动画</summary>
+<summary>接触区应力与应变特写</summary>
 
 von Mises 应力
 
-https://github.com/user-attachments/assets/313640e8-31e3-430d-a216-0df97165a42b
+<!-- VIDEO helical_stress_60fps.mp4 -->
 
 等效弹性应变
 
-https://github.com/user-attachments/assets/e5b903b8-acc0-4e2c-b1c5-8c422b5f4686
+<!-- VIDEO helical_strain_60fps.mp4 -->
 
 </details>
 
-[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/helical_strain_60fps.mp4)
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/helical_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/helical_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/helical_strain_60fps.mp4)
 
 ### 凸轮与从动件
 
-https://github.com/user-attachments/assets/4a178e9c-1383-4189-b0ec-46819603bdcc
+<!-- VIDEO cam_model_60fps.mp4 -->
 
 <details>
-<summary>应力与应变动画</summary>
+<summary>接触区应力与应变特写</summary>
 
 von Mises 应力
 
-https://github.com/user-attachments/assets/ede5e7c4-51da-4328-a317-ee36b57fe8cf
+<!-- VIDEO cam_stress_60fps.mp4 -->
 
 等效弹性应变
 
-https://github.com/user-attachments/assets/54cb9456-5642-4807-a651-ec50f042af5a
+<!-- VIDEO cam_strain_60fps.mp4 -->
 
 </details>
 
-[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.1.0/guided_cam_strain_60fps.mp4)
+[模型 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/cam_model_60fps.mp4) · [应力 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/cam_stress_60fps.mp4) · [应变 MP4](https://github.com/W-Moorer/CoFlexSim/releases/download/v0.2.0/cam_strain_60fps.mp4)
 
-[网格质量与更新](docs/mesh_quality.md) · [模型参数](examples/README.md) · [场量定义](docs/media.md)
+[网格质量对比](docs/mesh_quality.md) · [模型参数与复现](examples/README.md) · [场量与色标](docs/media.md)
 
 ## 计算流程
 
 ![CoFlexSim workflow](docs/assets/workflow.png)
 
-离线构造模态与整件表面残余柔度；在线由 C++ 管理时间推进和区域缓存，GPU 完成表面更新、BVH 查询、接触积分与耦合求解。应力应变在后处理恢复。
-
-[算法与代码结构](docs/architecture.md)
+离线构造模态与整件表面残余柔度；在线由 C++ 管理时间推进和区域缓存，GPU 完成表面更新、BVH 查询、接触积分与耦合求解。
 
 ## 结果与性能
 
-相同模型、步长下，统一 C++/CUDA 后端与参考 GPU 流程的长时程响应如下。
+新旧网格采用相同材料、载荷、步长和 C++/CUDA 后端，完整响应对比如下。
 
-![Full-trajectory response comparison](docs/assets/response_full.png)
+![Previous and updated mesh responses](docs/assets/mesh_response_full.png)
 
-[末段响应图](docs/assets/response_late.png) · [完整响应 CSV 与误差定义](results/README.md)
+[末段对比](docs/assets/mesh_response_late.png) · [细网格直齿轮响应](docs/assets/spur_response.png) · [CSV 与测量数据](results/mesh_update)
+
+新旧网格的全程接触力／运动响应差：凸轮 **2.85%／3.09%**，斜齿轮 **71.48%／46.40%**。斜齿轮对空间离散仍明显敏感，不能仅凭网格质量改善就认定响应精度已提高；[几何核查与结果说明](docs/remeshed_results.md)保留这一变化。
 
 ### 在线时间
 
-RTX 3070，单位秒。短窗各跑三次，报告中位数；预计算与初始化单列。
+RTX 3070；单位为秒。以下长时程为单次完整测量，预计算、初始化和场量导出分开记录。
 
-| 算例 / 短窗 | CPU | 原 GPU | 优化 GPU | C++/CUDA | 相对原 GPU |
-|---|---:|---:|---:|---:|---:|
-| 直齿轮 / 200–212 ms | — | 4.381 | — | **3.115** | **1.41×** |
-| 斜齿轮 / 0–12 ms | 96.009 | 2.867 | 1.952 | **1.451** | **1.98×** |
-| 凸轮 / 0–330 ms | 55.168 | 3.036 | 2.284 | **1.852** | **1.64×** |
-
-长时程的完整测量记录：
-
-| 算例 / 平台 | 参考 GPU / s | C++/CUDA / s | 比值 |
-|---|---:|---:|---:|
-| 直齿轮 0.5 s / 3070，首轮 | 506.922 | 194.745 | 2.60× |
-| 直齿轮 0.5 s / 3070，复测 | 173.795 | 138.783 | 1.25× |
-| 斜齿轮 0.5 s / 3070，首轮 | 68.847 | 77.461 | 0.89× |
-| 斜齿轮 0.5 s / 3070，复测 | 63.585 | 54.564 | 1.17× |
-| 凸轮 10 s / 3070 | 60.118 | 54.589 | 1.10× |
-| 斜齿轮 0.5 s / 3090 | 43.655 | 42.053 | 1.04× |
-| 凸轮 10 s / 3090 | 49.979 | 48.842 | 1.02× |
-
-长程为单次实测值，保留首轮和复测以呈现读盘缓存与运行顺序的影响。参考后端、硬件配置和预计算时间见 [性能记录](docs/performance.md)。
-
-### 内存
-
-单位 MiB，来自独立内存诊断。
-
-| 算例 | 参考显存 | C++/CUDA 显存 | 参考主机 RSS | C++/CUDA 主机 RSS |
+| 算例 | 仿真时长 | 在线求解 | 初始化 | 离线准备总计 |
 |---|---:|---:|---:|---:|
-| 直齿轮 | 1,364.3 | 2,079.0 | 2,150.5 | 2,169.2 |
-| 斜齿轮 | 870.6 | 870.7 | 2,111.8 | 2,106.3 |
-| 凸轮 | 88.8 | 63.8 | 643.3 | 651.7 |
+| 细网格直齿轮 | 0.5 s | 138.783 | 沿用已有测量 | 复用已有数据 |
+| 新网格斜齿轮 | 0.5 s | 105.794 | 6.801 | 2670.591 |
+| 新网格凸轮 | 10 s | 58.734 | 0.298 | 1.286 |
+
+新网格短窗各跑三次，报告中位数：
+
+| 算例 / 短窗 | 参考 GPU | C++/CUDA | 加速比 |
+|---|---:|---:|---:|
+| 斜齿轮 / 0–12 ms | 3.005 | 2.493 | 1.21× |
+| 凸轮 / 0–330 ms | 2.055 | 1.926 | 1.07× |
+
+### 存储
+
+| 算例 | 主机表面柔度库 / MiB | GPU 活跃分配诊断上界 / MiB |
+|---|---:|---:|
+| 细网格直齿轮 | 约 9,687（磁盘分块库） | 2,079.0 |
+| 新网格斜齿轮 | 5,158.9（RAM 库） | 1,373.1 |
+| 新网格凸轮 | 2.4（RAM 库） | 65.8 |
+
+新网格显存来自独立 64 步诊断，包含原生工作区；预计算使用主机内存。直齿轮沿用此前同网格测量。[完整测量与误差](docs/remeshed_results.md) · [v0.1.0 性能记录](docs/performance.md)
 
 ## 快速开始
 
@@ -139,12 +132,12 @@ python coflex.py build
 python coflex.py check
 python coflex.py fetch-data
 python coflex.py prepare cam
-python coflex.py run cam --backend native_cuda
+python coflex.py run cam --backend native_cuda --full
 ```
 
-使用 `--full` 运行完整轨迹；`--backend cpu_columns` 或 `host_cuda` 切换参照后端。Windows 从 Visual Studio x64 开发者终端构建。
+Windows 从 Visual Studio x64 开发者终端构建。新网格的准备目录按网格哈希隔离；旧算子的完整记录保留在原目录。
 
-[详细复现步骤](examples/README.md) · [架构](docs/architecture.md) · [许可证](LICENSE)
+[详细复现步骤](examples/README.md) · [算法与代码结构](docs/architecture.md) · [许可证](LICENSE)
 
 ## 参考文献
 

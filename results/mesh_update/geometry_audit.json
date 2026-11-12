@@ -1,0 +1,213 @@
+{
+  "previous_scene_sha256": "13fc45c70fc93d2f051309b01a263e09caf8a39ad038742251bf2c4ebbe4da69",
+  "updated_scene_sha256": "df3698204c9b3ee5e2c94eb6861ec3cb95214827ad7cef8fa8dbe19eaeb392c3",
+  "bodies": [
+    {
+      "body": 0,
+      "previous": {
+        "nodes": 3864,
+        "elements": 9828,
+        "volume_m3": 9.879905901058501e-06,
+        "hub_nodes": 160,
+        "hub_radial_range_m": [
+          0.005999999999999999,
+          0.006000000000000001
+        ],
+        "hub_z_range_m": [
+          -0.003,
+          0.003
+        ]
+      },
+      "updated": {
+        "nodes": 14436,
+        "elements": 50237,
+        "volume_m3": 9.875494236963309e-06,
+        "hub_nodes": 360,
+        "hub_radial_range_m": [
+          0.005981504002398766,
+          0.006000000000000001
+        ],
+        "hub_z_range_m": [
+          -0.003,
+          0.003
+        ]
+      },
+      "new_nodes_to_old_facets": {
+        "samples": 6868,
+        "unsigned_mean_um": 17.54843682567595,
+        "unsigned_P95_um": 79.76623243363926,
+        "unsigned_max_um": 154.86921563201972,
+        "normal_absolute_P95_um": 4.816192827300169,
+        "normal_signed_range_um": [
+          -7.751145850149259,
+          5.504803350443208
+        ]
+      },
+      "old_nodes_to_new_facets": {
+        "samples": 3200,
+        "unsigned_mean_um": 101.16838287994804,
+        "unsigned_P95_um": 240.0048996868621,
+        "unsigned_max_um": 1194.6691216164163,
+        "normal_absolute_P95_um": 7.145736110771883,
+        "normal_signed_range_um": [
+          -13.061331789094073,
+          1151.9466093520589
+        ]
+      },
+      "shared_parameters_equal": true,
+      "previous_spectrum": {
+        "modes": 333,
+        "first_ten_frequencies_hz": [
+          487.4323110384981,
+          505.19983002116567,
+          537.6896348507441,
+          548.3927656340578,
+          707.7488440262554,
+          739.4641448633206,
+          957.8378293698609,
+          959.6352052972576,
+          1096.7735442125777,
+          1141.578296902983
+        ]
+      },
+      "updated_spectrum": {
+        "modes": 446,
+        "first_ten_frequencies_hz": [
+          355.78486572738797,
+          356.0911193820919,
+          387.9780769692189,
+          432.5486857815496,
+          433.10359482581555,
+          452.31509388307535,
+          718.2474958377925,
+          718.4533617912376,
+          929.531438809098,
+          929.6760364762783
+        ]
+      }
+    },
+    {
+      "body": 1,
+      "previous": {
+        "nodes": 5932,
+        "elements": 14814,
+        "volume_m3": 2.2147173114149104e-05,
+        "hub_nodes": 240,
+        "hub_radial_range_m": [
+          0.009999999999999993,
+          0.010000000000000007
+        ],
+        "hub_z_range_m": [
+          -0.003,
+          0.003
+        ]
+      },
+      "updated": {
+        "nodes": 24120,
+        "elements": 85819,
+        "volume_m3": 2.2146931350841827e-05,
+        "hub_nodes": 540,
+        "hub_radial_range_m": [
+          0.009986295347545733,
+          0.010000000000000009
+        ],
+        "hub_z_range_m": [
+          -0.003,
+          0.003
+        ]
+      },
+      "new_nodes_to_old_facets": {
+        "samples": 10100,
+        "unsigned_mean_um": 19.109204428724873,
+        "unsigned_P95_um": 84.23201256653243,
+        "unsigned_max_um": 144.60727114558375,
+        "normal_absolute_P95_um": 3.0401882306043335,
+        "normal_signed_range_um": [
+          -3.0968264419317,
+          3.8144778939488635
+        ]
+      },
+      "old_nodes_to_new_facets": {
+        "samples": 5040,
+        "unsigned_mean_um": 91.01634057724422,
+        "unsigned_P95_um": 240.61589101987502,
+        "unsigned_max_um": 962.2357214143409,
+        "normal_absolute_P95_um": 5.227394471720272,
+        "normal_signed_range_um": [
+          -12.372523585180891,
+          902.8054262097025
+        ]
+      },
+      "shared_parameters_equal": true,
+      "previous_spectrum": {
+        "modes": 499,
+        "first_ten_frequencies_hz": [
+          355.26297100068973,
+          369.0442381956159,
+          378.39089558705024,
+          380.9833918354414,
+          489.90585563109,
+          496.3006056796536,
+          689.9515885621798,
+          697.7729922034483,
+          740.6699114821157,
+          756.7151529183319
+        ]
+      },
+      "updated_spectrum": {
+        "modes": 903,
+        "first_ten_frequencies_hz": [
+          188.6317665798928,
+          188.65392039500315,
+          198.21800450295217,
+          225.08766866721416,
+          225.1325738330183,
+          340.2228796094528,
+          373.92972924750916,
+          374.0835469861629,
+          582.7662692913091,
+          583.2321861149087
+        ]
+      }
+    }
+  ],
+  "force_windows": {
+    "first_12ms": {
+      "previous": {
+        "peak_N": 2.018358213360799,
+        "peak_time_s": 0.0028750000000000017,
+        "force_time_integral_Ns": 0.008142603914074547
+      },
+      "updated": {
+        "peak_N": 1.6837996267708266,
+        "peak_time_s": 0.0028750000000000017,
+        "force_time_integral_Ns": 0.008077861404055555
+      }
+    },
+    "full": {
+      "previous": {
+        "peak_N": 2.018358213360799,
+        "peak_time_s": 0.0028750000000000017,
+        "force_time_integral_Ns": 0.3433119406997452
+      },
+      "updated": {
+        "peak_N": 1.77650221381028,
+        "peak_time_s": 0.3003749999999808,
+        "force_time_integral_Ns": 0.3430563330839417
+      }
+    },
+    "last_50ms": {
+      "previous": {
+        "peak_N": 1.140653869973419,
+        "peak_time_s": 0.46074999999996313,
+        "force_time_integral_Ns": 0.03436725421877494
+      },
+      "updated": {
+        "peak_N": 1.4099052965284924,
+        "peak_time_s": 0.45149999999996415,
+        "force_time_integral_Ns": 0.0346077495421134
+      }
+    }
+  },
+  "interpretation": "Distance is a geometric discretization difference, not a solver error or an independent accuracy certificate. Unchanged loads do not imply unchanged facet geometry, normals, FE stiffness or discrete modal space. These checks do not isolate their individual causal contributions."
+}

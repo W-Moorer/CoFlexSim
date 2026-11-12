@@ -1,8 +1,8 @@
 {
   "case": "cam",
-  "scene_sha256": "1e26fa88c42e39e9c8fdcbc1fb5f05aee19f26d0ea0428ced199c991d17096f4",
-  "nodes": 468,
-  "tetrahedra": 1176,
+  "scene_sha256": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048",
+  "nodes": 813,
+  "tetrahedra": 2788,
   "dt_s": 0.0005,
   "duration_s": 10.0,
   "short_steps": 660,
@@ -14,5 +14,11 @@
   "friction": false,
   "solver_policy": {
     "absolute_tolerance": 1e-07
-  }
+  },
+  "mesh_version": "quality_20261112",
+  "modal_candidate_hints": [
+    32,
+    32
+  ],
+  "preparation_threads": 4
 }

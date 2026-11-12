@@ -1,0 +1,176 @@
+{
+  "helical": {
+    "scene_sha256": "df3698204c9b3ee5e2c94eb6861ec3cb95214827ad7cef8fa8dbe19eaeb392c3",
+    "nodes": 38556,
+    "tetrahedra": 136056,
+    "dt_s": 0.000125,
+    "duration_s": 0.5,
+    "source_record": "helical_native_cuda_long.json",
+    "source_sha256": "844e6e3ee439ddf2c0d0f4c5bcdfa2f420d6397cc0a4878279bcaaef7d09431e",
+    "mode_counts": [
+      446,
+      903
+    ],
+    "offline_operator_s": 909.0254571998958,
+    "offline_bank_and_bounds_s": 1649.4881674000062,
+    "offline_total_wall_s": 2670.590733200079,
+    "host_bank_bytes": 5409499392,
+    "online_s": 105.79409709945321,
+    "initialization_s": 6.801262699998915,
+    "short_three_repeat_medians_s": {
+      "host_cuda": 3.005088900215924,
+      "native_cuda": 2.4926434999797493
+    },
+    "short_backend_relative_max": 2.4584512027791287e-13,
+    "owned_GPU_diagnostic_upper_bound_bytes": 1439769920,
+    "diagnostic_steps": 64,
+    "process_peak_RSS_including_preparation_bytes": 8627290112,
+    "mesh_response_difference": {
+      "full": {
+        "force": {
+          "relative_l2": 0.7147642910658913,
+          "maximum_absolute_difference": 1.549166548242332,
+          "previous_peak": 2.018358213360799,
+          "updated_peak": 1.77650221381028
+        },
+        "response": {
+          "relative_l2": 0.4640248273648795,
+          "maximum_absolute_difference": 0.006735548864672314,
+          "previous_peak": 0.008352856139463793,
+          "updated_peak": 0.01064180271078774
+        },
+        "axial_force": {
+          "relative_l2": 0.7103566583687229,
+          "maximum_absolute_difference": 0.3759178390211783,
+          "previous_peak": 0.4874986453714248,
+          "updated_peak": 0.42710121499670384
+        }
+      },
+      "late": {
+        "force": {
+          "relative_l2": 0.7076112829062707,
+          "maximum_absolute_difference": 1.140653869973419,
+          "previous_peak": 1.140653869973419,
+          "updated_peak": 1.4099052965284924
+        },
+        "response": {
+          "relative_l2": 0.44097565483383333,
+          "maximum_absolute_difference": 0.005241628307818047,
+          "previous_peak": 0.006410244860521885,
+          "updated_peak": 0.009766355044986241
+        },
+        "axial_force": {
+          "relative_l2": 0.7010764601768247,
+          "maximum_absolute_difference": 0.2781066165381362,
+          "previous_peak": 0.2781066165381362,
+          "updated_peak": 0.33798099866206205
+        }
+      }
+    },
+    "field_recovery": {
+      "seconds": 156.09645080007613,
+      "active_surface_displacement_max_error_m": 1.0760706561918632e-17,
+      "elastic_displacement_max_m": 0.0003481426114476864,
+      "formula": "u = Phi q + K^-1 S^T f - Phi Kr^-1 Phi_s^T f",
+      "field_model": "body-frame infinitesimal elastic strain, isotropic linear stress, constant per tetrahedron; exterior facets inherit owner element values",
+      "strain_definition": "sqrt(2/3 dev(epsilon):dev(epsilon)), dimensionless; displayed in microstrain",
+      "visualization_displacement_scale": 1.0,
+      "full_volume_stress_max_MPa": 0.7294520061054452,
+      "full_volume_strain_max_microstrain": 31609.586931235965
+    },
+    "capture_parity": {
+      "force": 1.6901089871069038e-10,
+      "refs": 1.6900617689149805e-12,
+      "contact_moment_about_reference_Nm": 1.6811803888265326e-10
+    },
+    "platform": "NVIDIA GeForce RTX 3070",
+    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting"
+  },
+  "cam": {
+    "scene_sha256": "0e8048048204741eca32fc30fc50fd00d51a4182eb08e932958d5300430b6048",
+    "nodes": 813,
+    "tetrahedra": 2788,
+    "dt_s": 0.0005,
+    "duration_s": 10.0,
+    "source_record": "cam_native_cuda_long.json",
+    "source_sha256": "35fd8f074759be676991972389ac194b897b922f449f2d0b71fb7d942a1ecbb0",
+    "mode_counts": [
+      1,
+      0
+    ],
+    "offline_operator_s": 0.40663310000672936,
+    "offline_bank_and_bounds_s": 0.5147630998399109,
+    "offline_total_wall_s": 1.285718500148505,
+    "host_bank_bytes": 2553480,
+    "online_s": 58.733628899091855,
+    "initialization_s": 0.29803889989852905,
+    "short_three_repeat_medians_s": {
+      "host_cuda": 2.0552348005585372,
+      "native_cuda": 1.9262809988576919
+    },
+    "short_backend_relative_max": 2.0885486027218665e-13,
+    "owned_GPU_diagnostic_upper_bound_bytes": 69033532,
+    "diagnostic_steps": 64,
+    "process_peak_RSS_including_preparation_bytes": 841728000,
+    "mesh_response_difference": {
+      "full": {
+        "force": {
+          "relative_l2": 0.028518400207531776,
+          "maximum_absolute_difference": 0.04953459486254618,
+          "previous_peak": 0.0861135891694414,
+          "updated_peak": 0.08885978314974431
+        },
+        "response": {
+          "relative_l2": 0.030914473868860533,
+          "maximum_absolute_difference": 1.476166951081247e-05,
+          "previous_peak": 0.0004143749518366948,
+          "updated_peak": 0.0004252239612601293
+        },
+        "axial_force": {
+          "relative_l2": 0.3724709793124924,
+          "maximum_absolute_difference": 2.7955396008100416e-05,
+          "previous_peak": 3.781797824030816e-05,
+          "updated_peak": 4.0437001155282974e-05
+        }
+      },
+      "late": {
+        "force": {
+          "relative_l2": 0.027035736475513453,
+          "maximum_absolute_difference": 0.005110192716975673,
+          "previous_peak": 0.07909314925351024,
+          "updated_peak": 0.08162888544074304
+        },
+        "response": {
+          "relative_l2": 0.031165121249567662,
+          "maximum_absolute_difference": 1.4163036998876408e-05,
+          "previous_peak": 0.0004143709355571802,
+          "updated_peak": 0.0004252188158322808
+        },
+        "axial_force": {
+          "relative_l2": 0.38273004861572535,
+          "maximum_absolute_difference": 2.78079280123924e-05,
+          "previous_peak": 3.189997904682206e-05,
+          "updated_peak": 3.315052329225827e-05
+        }
+      }
+    },
+    "field_recovery": {
+      "seconds": 2.776205600006506,
+      "active_surface_displacement_max_error_m": 1.2705494208814505e-20,
+      "elastic_displacement_max_m": 1.0443128427756353e-05,
+      "formula": "u = Phi q + K^-1 S^T f - Phi Kr^-1 Phi_s^T f",
+      "field_model": "body-frame infinitesimal elastic strain, isotropic linear stress, constant per tetrahedron; exterior facets inherit owner element values",
+      "strain_definition": "sqrt(2/3 dev(epsilon):dev(epsilon)), dimensionless; displayed in microstrain",
+      "visualization_displacement_scale": 1.0,
+      "full_volume_stress_max_MPa": 0.12688348615924824,
+      "full_volume_strain_max_microstrain": 5498.284400234092
+    },
+    "capture_parity": {
+      "force": 2.8975084989144536e-13,
+      "refs": 6.422699068490242e-17,
+      "contact_moment_about_reference_Nm": 2.6390269166835324e-13
+    },
+    "platform": "NVIDIA GeForce RTX 3070",
+    "comparison_scope": "mesh discretization change with unchanged loads, time step and common backend; no time shifts or curve fitting"
+  }
+}

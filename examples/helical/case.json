@@ -1,8 +1,8 @@
 {
   "case": "helical",
-  "scene_sha256": "13fc45c70fc93d2f051309b01a263e09caf8a39ad038742251bf2c4ebbe4da69",
-  "nodes": 9796,
-  "tetrahedra": 24642,
+  "scene_sha256": "df3698204c9b3ee5e2c94eb6861ec3cb95214827ad7cef8fa8dbe19eaeb392c3",
+  "nodes": 38556,
+  "tetrahedra": 136056,
   "dt_s": 0.000125,
   "duration_s": 0.5,
   "short_steps": 96,
@@ -11,5 +11,11 @@
   "region_budget_MiB": 512,
   "pair_capacity_factor": 3.0,
   "contact_contract": "surface_cms_cartesian_projected_hht",
-  "friction": false
+  "friction": false,
+  "mesh_version": "quality_20261112",
+  "modal_candidate_hints": [
+    512,
+    1024
+  ],
+  "preparation_threads": 4
 }
