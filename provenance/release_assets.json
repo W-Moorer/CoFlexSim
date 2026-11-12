@@ -52,11 +52,6 @@
       "sha256": "c697a593853bf2701ff4cf4de889058b498c747f8bfcd821692307f3ea854159"
     },
     {
-      "file": "CoFlexSim-media-60fps.zip",
-      "bytes": 15799312,
-      "sha256": "b9ddff92c4d1ad6dba32206f1b6a217839daf74986b88b1595b10dbce5dbe1f4"
-    },
-    {
       "file": "coflexsim-example-data-v0.1.0.zip",
       "bytes": 5708518,
       "sha256": "baf7bc59d5f3ea871054aeb57af1ed76c4db97f1313729a03d43c3b098629c7d"
@@ -89,6 +84,12 @@
       "kind": "user_supplied_reference_paper",
       "doi": "10.1016/j.apm.2026.117206",
       "copyright": "© 2026 Elsevier Inc. All rights are reserved."
+    },
+    {
+      "file": "coflexsim-quality-meshes-20261112.zip",
+      "bytes": 2925462,
+      "sha256": "69a502b70987d528322679d8899dbf201a25ea7dc877d127c3839c22092ebfec",
+      "kind": "quality_reviewed_mesh_inputs"
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "frozen_sources_unchanged": 234,
+  "published_solver_sources_unchanged": 128,
+  "native_video_players": 9,
+  "mesh_archive_sha256_verified": true,
+  "relative_links_verified": true,
+  "figures": "English Times New Roman; Python generation; visual review passed; no bar charts",
+  "new_mesh_dynamics_run": false
+}

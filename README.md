@@ -20,18 +20,18 @@ CoFlexSim 用动态模态描述整体运动，用表面残余柔度恢复接触�
 
 ### 直齿轮
 
-<!-- VIDEO spur_fine_model_60fps.mp4 -->
+https://github.com/user-attachments/assets/078023a5-0da2-46de-8b3a-307011e4b28a
 
 <details>
 <summary>应力与应变动画</summary>
 
 von Mises 应力
 
-<!-- VIDEO spur_fine_stress_60fps.mp4 -->
+https://github.com/user-attachments/assets/ced349fe-db05-41b6-bd85-405c67a86a0d
 
 等效弹性应变
 
-<!-- VIDEO spur_fine_strain_60fps.mp4 -->
+https://github.com/user-attachments/assets/2af82925-cc96-4205-aa92-ff92ca864328
 
 </details>
 
@@ -39,18 +39,18 @@ von Mises 应力
 
 ### 斜齿轮
 
-<!-- VIDEO helical_model_60fps.mp4 -->
+https://github.com/user-attachments/assets/f1878fb1-caf5-4f58-85a2-2606483800ff
 
 <details>
 <summary>应力与应变动画</summary>
 
 von Mises 应力
 
-<!-- VIDEO helical_stress_60fps.mp4 -->
+https://github.com/user-attachments/assets/313640e8-31e3-430d-a216-0df97165a42b
 
 等效弹性应变
 
-<!-- VIDEO helical_strain_60fps.mp4 -->
+https://github.com/user-attachments/assets/e5b903b8-acc0-4e2c-b1c5-8c422b5f4686
 
 </details>
 
@@ -58,18 +58,18 @@ von Mises 应力
 
 ### 凸轮与从动件
 
-<!-- VIDEO guided_cam_model_60fps.mp4 -->
+https://github.com/user-attachments/assets/4a178e9c-1383-4189-b0ec-46819603bdcc
 
 <details>
 <summary>应力与应变动画</summary>
 
 von Mises 应力
 
-<!-- VIDEO guided_cam_stress_60fps.mp4 -->
+https://github.com/user-attachments/assets/ede5e7c4-51da-4328-a317-ee36b57fe8cf
 
 等效弹性应变
 
-<!-- VIDEO guided_cam_strain_60fps.mp4 -->
+https://github.com/user-attachments/assets/54cb9456-5642-4807-a651-ec50f042af5a
 
 </details>
 

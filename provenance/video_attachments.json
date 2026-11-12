@@ -1,0 +1,15 @@
+{
+  "pull_request": "https://github.com/W-Moorer/CoFlexSim/pull/1",
+  "format": "H.264 MP4, 60 fps",
+  "videos": {
+    "spur_fine_model_60fps.mp4": "https://github.com/user-attachments/assets/078023a5-0da2-46de-8b3a-307011e4b28a",
+    "spur_fine_stress_60fps.mp4": "https://github.com/user-attachments/assets/ced349fe-db05-41b6-bd85-405c67a86a0d",
+    "spur_fine_strain_60fps.mp4": "https://github.com/user-attachments/assets/2af82925-cc96-4205-aa92-ff92ca864328",
+    "helical_model_60fps.mp4": "https://github.com/user-attachments/assets/f1878fb1-caf5-4f58-85a2-2606483800ff",
+    "helical_stress_60fps.mp4": "https://github.com/user-attachments/assets/313640e8-31e3-430d-a216-0df97165a42b",
+    "helical_strain_60fps.mp4": "https://github.com/user-attachments/assets/e5b903b8-acc0-4e2c-b1c5-8c422b5f4686",
+    "guided_cam_model_60fps.mp4": "https://github.com/user-attachments/assets/4a178e9c-1383-4189-b0ec-46819603bdcc",
+    "guided_cam_stress_60fps.mp4": "https://github.com/user-attachments/assets/ede5e7c4-51da-4328-a317-ee36b57fe8cf",
+    "guided_cam_strain_60fps.mp4": "https://github.com/user-attachments/assets/54cb9456-5642-4807-a651-ec50f042af5a"
+  }
+}
